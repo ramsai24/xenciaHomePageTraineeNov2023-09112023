@@ -1,0 +1,36 @@
+.bg-container{
+    padding:25px;
+    border:4px dashed;
+}
+
+.intro-container{
+    margin:20px;
+    border:1px solid;
+    padding:12px;
+
+
+}
+
+.education-container{
+    margin:20px;
+    border:1px solid;
+    padding:12px;
+
+
+}
+
+.education-heading{
+    text-align: center;
+    border-bottom: 1px solid;
+
+}
+
+.education-details{
+    border-bottom: 1px solid;
+}
+.experi-heading{
+    font-weight: normal;
+    margin-left: 20px;
+    padding-left:10px;
+    border-left:1px solid;
+}
