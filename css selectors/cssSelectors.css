@@ -1,0 +1,47 @@
+* {
+  border: 3px dashed;
+  margin: 10px;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+li {
+  color: blue;
+  margin: 10px;
+}
+div[flex] {
+  display: flex;
+  justify-content: space-between;
+}
+li[fontsize] {
+  font-size: 20px;
+}
+li[fontsizeWithPT] {
+  font-size: 20pt;
+}
+li[fontsizeWithEM] {
+  font-size: 1em;
+}
+li[fontsizeWithREM] {
+  font-size: 1rem;
+}
+li[fontweight] {
+  font-weight: bolder;
+}
+
+li[draggable] {
+  color: red;
+}
+
+img {
+  width: 300px;
+}
+
+.class-selector {
+  color: green;
+  border: none;
+}
+
+ol {
+  padding: 10px;
+}
