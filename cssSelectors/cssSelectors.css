@@ -31,10 +31,12 @@ li[fontweight] {
 
 li[draggable] {
   color: red;
+  border: 1px solid cadetblue;
 }
 
 img {
   width: 300px;
+  height: 180px;
 }
 
 .class-selector {
@@ -44,4 +46,11 @@ img {
 
 ol {
   padding: 10px;
+}
+
+li[idselector] {
+  color: #ed5ab3;
+}
+#idSelector {
+  border: 4px dotted orangered;
 }
