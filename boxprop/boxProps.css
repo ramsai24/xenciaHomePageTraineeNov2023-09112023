@@ -1,0 +1,17 @@
+img {
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border: 4px solid;
+}
+h1 {
+  margin: 0px;
+  height: 248px;
+  /* width: 500px; */
+}
+
+a[space] {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+}

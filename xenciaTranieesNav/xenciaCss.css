@@ -4,7 +4,7 @@ a:hover {
 }
 .bg-container {
   display: flex;
-  background-color: #872341;
+  background-color: #ce5a67;
   background-size: cover;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@ a:hover {
   align-self: flex-start;
   border: 1px solid;
   height: 10vh;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .xen-heading {
   text-align: center;

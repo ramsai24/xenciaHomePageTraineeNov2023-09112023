@@ -1,0 +1,21 @@
+img {
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border: 3px solid;
+  margin: 0xp;
+}
+img[space] {
+  margin-left: 239.5px;
+}
+
+img[rightLeft] {
+  margin-left: 243.8px;
+}
+div {
+  /* border: 1px solid; */
+  /* width: 720px; */
+  margin: 0px;
+  padding-bottom: 0px;
+  height: 244.8px;
+}

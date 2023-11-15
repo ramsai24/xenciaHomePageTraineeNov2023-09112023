@@ -1,5 +1,5 @@
 * {
-  border: 3px dashed;
+  border: 2px dashed;
   margin: 10px;
   color: black;
   padding: 10px;
@@ -12,9 +12,13 @@ li {
 div[flex] {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 li[fontsize] {
   font-size: 20px;
+}
+li[width] {
+  width: 600px;
 }
 li[fontsizeWithPT] {
   font-size: 20pt;
