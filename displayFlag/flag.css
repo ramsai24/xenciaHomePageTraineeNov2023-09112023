@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  border: 1px solid black;
+  margin: 0px;
+  height: 100px;
+}
+
+.grid {
+  /* display: grid; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid blue;
+  /* grid-template-columns: 1fr 12fr; */
+}
+
+.a {
+  border: 1px solid blue;
+  /* margin: 3px; */
+  /* overflow: hidden;
+  flex-shrink: 1;
+  padding: 0px; */
+}
+
+.a1 {
+  /* height: 30pxs; */
+  rotate: 0deg;
+}
+
+.a2 {
+  /* height: 30pxs; */
+  rotate: 60deg;
+}
+
+.a3 {
+  /* height: 30pxs; */
+  rotate: 90deg;
+}
+
+.a5 {
+  rotate: 150deg;
+}
+
+.a6 {
+  rotate: 210deg;
+}
+/* .a7 {
+  rotate: 180deg;
+} */
+
+/* .a8 {
+  rotate: 210deg;
+} */
+/* .a9 {
+  rotate: 240deg;
+} */
+
+/* .a10 {
+  rotate: 270deg;
+} */
+
+.a11 {
+  rotate: 300deg;
+}
+
+/* .a12 {
+  rotate: 360deg;
+} */
