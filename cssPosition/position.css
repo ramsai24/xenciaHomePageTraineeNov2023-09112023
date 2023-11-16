@@ -1,12 +1,13 @@
 div[static] {
-  height: 900px;
-  width: 1000px;
+  height: 100vh;
+  background-size: cover;
   border: 1px solid black;
   position: static;
 }
 div[relative] {
+  background-color: #ff90c2;
   height: 300px;
-  width: 600px;
+  width: 500px;
   border: 1px solid black;
   position: relative;
   left: 200px;
@@ -15,9 +16,10 @@ div[relative] {
 div[absoulte] {
   height: 200px;
   width: 200px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 50%;
   position: absolute;
   left: 200px;
   top: 150px;
+  background-color: blueviolet;
 }
