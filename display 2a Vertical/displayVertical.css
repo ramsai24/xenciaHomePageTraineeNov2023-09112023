@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+h1[internal] {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 80px;
+  /* padding-top: 100px;
+  padding-bottom: 50px; */
+}
+
+h1.red {
+  background-color: red;
+}
+
+h1.green {
+  background-color: green;
+}
+
+h1#blue {
+  background-color: blue;
+}
+
+h1[internalHorizontal] {
+  display: inline-block;
+
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding-top: 80px;
+}
