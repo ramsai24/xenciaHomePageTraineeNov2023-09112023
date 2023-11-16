@@ -1,0 +1,32 @@
+.bg-container {
+  background-size: cover;
+  border: 1px solid blue;
+  height: 100vh;
+  padding-left: 20px;
+  padding: 20px;
+}
+.inline {
+  width: 100%;
+  border: 1px solid red;
+}
+.internal {
+  display: inline-block;
+  width: 48%;
+  /* border: 1px solid black; */
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin: 12px;
+}
+
+p {
+  margin: 12px;
+}
+
+h1 {
+  text-align: center;
+  border: 1px solid black;
+}
