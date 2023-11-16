@@ -1,7 +1,8 @@
 div[static] {
-  height: 800px;
-  width: 800px;
+  height: 900px;
+  width: 1000px;
   border: 1px solid black;
+  position: static;
 }
 div[relative] {
   height: 300px;

@@ -1,6 +1,8 @@
-.bg {
-  border: 1px solid;
-  padding: 20px;
+.bg-container {
+  /* border: 1px solid black; */
+  padding-left: 350px;
+  height: 100vh;
+  width: 100%;
 }
 
 img {
@@ -11,7 +13,7 @@ img {
   margin: 0xp;
 }
 img[space] {
-  margin-left: 239.5px;
+  margin-left: 238.5px;
 }
 
 img[rightLeft] {
