@@ -1,0 +1,22 @@
+div[static] {
+  height: 800px;
+  width: 800px;
+  border: 1px solid black;
+}
+div[relative] {
+  height: 300px;
+  width: 600px;
+  border: 1px solid black;
+  position: relative;
+  left: 200px;
+  top: 200px;
+}
+div[absoulte] {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 200px;
+  top: 150px;
+}
