@@ -1,0 +1,63 @@
+.bg-container {
+  display: flex;
+}
+.flex {
+  display: flex;
+}
+
+/* a.h:active {
+  display: none;
+}
+
+as.v:hover {
+  display: none;
+} */
+/* #check {
+  display: none;
+} */
+#check:checked + label > div {
+  display: block;
+}
+.tooltip {
+  /* display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 1000px;
+  justify-content: space-between; */
+  border: 1px solid blue;
+}
+
+/* .tooltip .tooltiptext {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .tooltip:active .tooltiptext {
+  visibility: visible;
+  position: absolute;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}*/
+
+/* .tip-container {
+  display: flex;
+} */
+/* h1:visited {
+  display: none;
+}
+
+h1.b:visited {
+  display: none;
+} */
+/* .tooltip .b:hover {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+} */
+
+.tooltiptext {
+  display: none;
+}

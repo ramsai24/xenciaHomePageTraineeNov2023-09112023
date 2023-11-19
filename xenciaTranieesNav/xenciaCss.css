@@ -1,6 +1,6 @@
 a:hover {
-  background-color: #860a35;
-  color: black;
+  background-color: #776b5d;
+  color: white;
 }
 .bg-container {
   display: flex;
@@ -53,7 +53,7 @@ a:hover {
   border: 1px solid;
   padding: 14px;
   width: 10%;
-  background-color: #D2E3C8;
+  background-color: #d2e3c8;
 }
 
 .nav-items {

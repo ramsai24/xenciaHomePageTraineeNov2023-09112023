@@ -88,6 +88,7 @@ h1 {
 .white {
   border: 1px solid black;
   padding-bottom: 20px;
+  /* background: repeating-conic-gradient(blue 0deg 2deg, white 2deg 4deg); */
 }
 
 h1[red] {
