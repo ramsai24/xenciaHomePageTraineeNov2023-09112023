@@ -5,7 +5,7 @@
 
 .chess {
   display: grid;
-  grid-template-rows: repeat(1, minmax(30px, 100px));
+  grid-template-rows: repeat(8, minmax(30px, 100px));
   grid-template-columns: repeat(8, minmax(30px, 100px));
 
   /* border: 1px solid black; */
