@@ -12,9 +12,9 @@
 as.v:hover {
   display: none;
 } */
-/* #check {
+#check {
   display: none;
-} */
+}
 #check:checked + label > div {
   display: block;
 }
