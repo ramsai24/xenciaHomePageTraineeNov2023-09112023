@@ -2,13 +2,17 @@ body {
   margin: 0px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a:hover {
   background-color: #776b5d;
   color: white;
 }
 .bg-container {
   display: flex;
-  background-image: url("https://res.cloudinary.com/daoquetki/image/upload/v1699962547/samples/cup-on-a-table.jpg");
+  /* background-image: url("https://res.cloudinary.com/daoquetki/image/upload/v1699962547/samples/cup-on-a-table.jpg"); */
 
   /* background-color: #ce5a67; */
   background-size: cover;
@@ -18,7 +22,7 @@ a:hover {
   border: 1px solid;
   height: 100vh;
   background-size: cover;
-
+  background-color: #d2e3c8;
   color: black;
 }
 
@@ -68,7 +72,7 @@ a:hover {
   height: 10vh;
   display: flex;
   justify-content: space-between;
-
+  background-color: #d2e3c8;
   /* text-decoration: unsderline; */
 }
 .xen-heading {
@@ -107,3 +111,36 @@ h1 {
 /* #checked:checked + div > li {
   display: block;
 } */
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  padding: 20px;
+  flex-wrap: wrap;
+  width: 1060px;
+}
+
+.card {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 60px;
+  margin: 6px;
+}
