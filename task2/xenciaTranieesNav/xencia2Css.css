@@ -20,10 +20,15 @@ a:hover {
   justify-content: center;
   align-items: center;
   border: 1px solid;
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
-  background-color: #d2e3c8;
+  background-color: #d41864;
   color: black;
+}
+
+.content {
+  display: flex;
+  width: 100%;
 }
 
 .anchor-element {
@@ -40,41 +45,94 @@ a:hover {
 .nav-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  align-self: stretch;
+  /* position: fixed;
+  left: 0px; */
   /* justify-content: space-between; */
-  border: 1px solid;
+  border: 1px solid red;
 
   /* width: 10%; */
-  background-color: #d2e3c8;
+  background-color: #d41864;
+}
+#hide,
+#hide2 {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid purple;
   height: 100%;
+  margin: 10px;
 }
 
+#hide {
+  margin-left: 0px;
+}
+
+#hide2 {
+  width: 40px;
+  margin-right: 0px;
+}
 .nav-items {
   display: flex;
   flex-direction: column;
+  border: 1px solid saddlebrown;
 }
-
+div[beside] {
+  display: flex;
+  height: 100%;
+}
 .dev-team {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   /* justify-content: center; */
   align-items: center;
   border: 1px solid;
-  width: 90%;
+
   /* background-color: #be3144; */
-  height: 100%;
-  border: 3px solid red;
+  /* height: 100%; */
+  border: 3px solid yellowgreen;
+}
+
+img[logo] {
+  width: 150px;
 }
 
 .xencia-header-container {
   width: 100%;
   align-self: flex-start;
   border: 1px solid yellow;
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
-  background-color: #d2e3c8;
+  background-color: #d2e3#d41864c8;
   /* text-decoration: unsderline; */
 }
+
+.profile-name-and-icon-container {
+  display: flex;
+}
+/* .hover-container {
+  display: none;
+  background-color: white;
+  padding: 10px;
+} */
+.profile-img-hover {
+  /* margin-top: 22px; */
+  width: 100px;
+  border: 1px solid yellow;
+  text-align: center;
+  margin-left: 100px;
+}
+
+/* .profile-img-hover:hover + .hover-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+} */
 .xen-heading {
   text-align: center;
 }
@@ -104,7 +162,7 @@ h1 {
 #checked {
   display: none;
 }
-/* #checked:checked ~ div {
+/* #checked:checked ~ div > #hide {
   display: none;
 } */
 
@@ -126,7 +184,8 @@ h1 {
   border: 1px solid blue;
   padding: 20px;
   flex-wrap: wrap;
-  width: 1060px;
+  overflow: auto;
+  height: 600px;
 }
 
 .card {
@@ -143,4 +202,50 @@ h1 {
 img {
   width: 60px;
   margin: 6px;
+}
+
+.card-intro {
+  height: 300px;
+}
+.card-images {
+  height: 300px;
+}
+
+img[scroll] {
+  width: 300px;
+  height: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.profile-icon-container {
+  position: relative;
+  display: inline-block;
+  top: 22px;
+}
+
+.profile-icon-container .hover-container {
+  visibility: hidden;
+  width: 120px;
+
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.profile-icon-container:hover .hover-container {
+  visibility: visible;
+}
+span[block] {
+  display: block;
+}
+
+label {
+  padding-top: 12px;
 }
