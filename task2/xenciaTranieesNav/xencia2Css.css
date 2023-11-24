@@ -6,6 +6,12 @@ body {
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  * {
+    font-family: monospace;
+  }
+}
+
 a:hover {
   background-color: #776b5d;
   color: white;
@@ -60,9 +66,16 @@ a:hover {
   background-color: #4bbfe5;
   padding-bottom: 25px;
 }
+
+/* @media screen and (min-height: 1300px) {
+  .nav-container {
+    height: 700px;
+  }
+} */
+
 #hide,
 #hide2 {
-  width: 200px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -75,6 +88,12 @@ a:hover {
   margin-left: 0px;
 }
 
+@media screen and (max-width: 992px) {
+  #hide {
+    width: 120px;
+  }
+}
+
 #hide2 {
   width: 40px;
   margin-right: 0px;
@@ -85,6 +104,7 @@ a:hover {
   color: azure;
   /* border: 1px solid saddlebrown; */
 }
+
 div[beside] {
   display: flex;
   height: 100%;
@@ -137,7 +157,16 @@ img[logo] {
   .xencia-header-container {
     min-width: 300px;
     justify-content: space-evenly;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .xencia-header-container {
+    min-width: 300px;
+    justify-content: space-between;
+    /* border: 2px solid greenyellow; */
+    padding-left: 14px;
   }
 }
 .profile-name-and-icon-container {
@@ -163,6 +192,12 @@ img[logo] {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .profile-img-hover {
+    width: 30px;
+  }
+}
+
 /* .profile-img-hover:hover + .hover-container {
   display: flex;
   flex-direction: column;
@@ -180,24 +215,21 @@ img[logo] {
     padding-top: 26px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .xen-heading {
+    align-self: center;
+    font-size: 19px;
+    padding-bottom: 10px;
+  }
+}
+
 th {
   font-weight: 600;
   font-size: 24px;
 }
 label {
   /* border: 1px solid green; */
-}
-
-table,
-th,
-td {
-  border: 1px solid;
-  border-collapse: collapse;
-  text-align: center;
-}
-
-tr {
-  height: 50px;
 }
 
 h1 {
@@ -236,6 +268,8 @@ h1 {
   flex-wrap: wrap;
   overflow: auto;
   height: 600px;
+  padding: 10px;
+  border-radius: 10px;
 }
 @media screen and (max-width: 568px) {
   .content-container {
@@ -275,11 +309,19 @@ h1 {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .cards-container {
+    min-width: 400px;
+    min-width: 600px;
+    height: auto;
+  }
+}
+
 .card {
   width: 300px;
   height: 150px;
   margin: 10px;
-  border: 1px solid salmon;
+  border: 5px solid salmon;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,13 +332,48 @@ h1 {
 
 @media screen and (max-width: 568px) {
   .card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
     width: 250px;
   }
 }
 
 .card:hover {
   background-color: azure;
+  font-family: "roboto";
+  font-size: 20px;
   color: #d41864;
+}
+
+@media screen and (max-width: 556px) {
+  .card:hover {
+    font-family: "Roboto";
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .card:hover {
+    font-family: "Roboto";
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card:hover {
+    font-family: "Roboto";
+    font-size: 14px;
+  }
 }
 
 img[card] {
@@ -336,6 +413,14 @@ span[cardContent] {
     overflow: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .card-intro {
+    justify-content: flex-start;
+    overflow: auto;
+  }
+}
+
 .card-images {
   height: 250px;
 }
@@ -361,6 +446,24 @@ img[scroll] {
 }
 
 @media screen and (max-width: 568px) {
+  img[scroll] {
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img[scroll] {
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
   img[scroll] {
     width: 120px;
     height: 120px;
@@ -399,6 +502,13 @@ img[scroll] {
     right: 5px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .hover-container {
+    right: 5px;
+  }
+}
+
 span[block] {
   display: block;
 }
