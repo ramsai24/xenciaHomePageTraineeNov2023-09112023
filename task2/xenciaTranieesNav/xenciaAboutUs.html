@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="xenciaCss.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="xencia2Css.css" />
+    <script
+      src="https://kit.fontawesome.com/62a994001e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="bg-container">
-      <div class="xencia-header">
-        <h1 class="xen-heading">Xencia</h1>
-      </div>
-      <div class="main-container">
-        <nav class="nav-container">
-          <li class="nav-items">
-            <a class="anchor-element" href="./xenciaHome.html">Home</a>
-            <a class="anchor-element" href="./xenciaDepartment.html"
-              >Deparment</a
-            >
-            <a class="anchor-element" href="./xenciaMember.html">Member</a>
-          </li>
-          <li class="nav-items">
-            <a class="anchor-element" href="./xenciaAboutUs.html">About us</a>
-            <a class="anchor-element" href="./xenciaContactUs.html"
-              >Contact Us</a
-            >
-          </li>
-        </nav>
-        <div class="dev-team">
-          <h1>AboutUs</h1>
+      <!-- <div class="content"> -->
+      <nav class="nav-container">
+        <input type="checkbox" id="checked" />
+        <label for="checked"> <a class="anchor-element">☰</a> </label>
+        <div beside>
+          <div id="hide2">
+            <li class="nav-items">
+              <a class="anchor-element " href="./xencia2Home.html"
+                ><i class="fa-solid fa-house extra"></i
+              ></a>
+              <a class="anchor-element extra" href="./xenciaDepartment.html"
+                ><i class="fa-solid fa-microchip"></i
+              ></a>
+              <a class="anchor-element extra" href="./xenciaMember.html"
+                ><i class="fa-solid fa-sitemap"></i
+              ></a>
+            </li>
+            <li class="nav-items">
+              <a class="anchor-element extra" href="./xenciaAboutUs.html">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+              <a class="anchor-element extra" href="./xenciaContactUs.html"
+                ><i class="fa-solid fa-question"></i></i
+              ></a>
+            </li>
+          </div>
+          <div id="hide">
+            <li class="nav-items">
+              <a class="anchor-element" href="./xencia2Home.html">Home</a>
+              <a class="anchor-element" href="./xenciaDepartment.html"
+                >Deparment</a
+              >
+              <a class="anchor-element" href="./xenciaMember.html">Branch</a>
+            </li>
+            <li class="nav-items">
+              <a class="anchor-element" href="./xenciaAboutUs.html">Settings</a>
+              <a class="anchor-element" href="./xenciaContactUs.html"
+                >Help</a
+              >
+            </li>
+          </div>
+        </div>
+      </nav>
+      <div class="dev-team">
+        <div class="xencia-header-container">
+          <a
+            ><img
+              logo
+              src="https://xencia.com/wp-content/uploads/2021/12/Xencia_Website_Logo_Desktop_Reverse_Regular_2021_12.svg"
+              srcset="
+                https://xencia.com/wp-content/uploads/2021/12/Xencia_Website_Logo_Desktop_Reverse_Regular_2021_12.svg 1x,
+                https://xencia.com/wp-content/uploads/2021/12/Xencia_Website_Logo_Desktop_Reverse_Retina_2021_12.svg  2x
+              "
+              alt="Cloud Solutions Provider, Managed Cloud Services | Xencia Logo"
+          /></a>
+          <div class="profile-name-and-icon-container">
+            <h1 class="xen-heading">Xencia</h1>
+            <div class="profile-icon-container">
+              <i
+                class="fa-solid fa-user profile-img-hover"
+                style="margin: 10px; font-size: 20px"
+              ></i>
+
+              <div class="hover-container">
+                <span block>Profile</span>
+                <span block>Settings</span>
+                <span block>Logout</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <h1><i class="fa-solid fa-gear main-icon help-icon"></i>Settings</h1>
+          
         </div>
       </div>
+      <!-- </div> -->
     </div>
   </body>
 </html>
