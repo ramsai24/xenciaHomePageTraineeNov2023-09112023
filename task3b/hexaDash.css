@@ -1,0 +1,20 @@
+img[profile] {
+  width: 40px;
+  border-radius: 50%;
+}
+
+div[ab] {
+  position: relative;
+}
+
+div[ab] ul {
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  top: 20px;
+  left: 50px;
+}
+
+div[ab]:hover ul {
+  visibility: visible;
+}
