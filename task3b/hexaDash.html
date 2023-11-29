@@ -312,14 +312,14 @@
                         <div class="task task-header-container">
                           <h4 class="column1">Task List</h4>
                           <div>
-                            <button class="column2">Today</button>
-                            <button class="column3">Week</button>
-                            <button class="column4">Month</button>
+                            <button class="column2 todayBtn">Today</button>
+                            <button class="column3 weekBtn">Week</button>
+                            <button class="column4 monthBtn">Month</button>
                           </div>
                         </div>
                         <div class="task task-data-container">
                           <div class="column1">
-                            <input type="checkbox" id="check1" />
+                            <input check type="checkbox" id="check1" checked/>
                             <label for="check1" style="font-size: 14px">
                               Planning for new dashboard wireframe and prototype design
                             </label>
@@ -331,7 +331,7 @@
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-pencil-square column3"
+                              class="bi bi-pencil-square column3 weekBtn"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -347,7 +347,7 @@
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-x-lg column4"
+                              class="bi bi-x-lg column4 monthBtn"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -357,176 +357,176 @@
                           </div>
                         </div>
                         <div class="task task-data-container">
-                          <div class="column1">
-                            <input type="checkbox" id="check1" />
-                            <label for="check1" style="font-size: 14px">
-                              Planning for new dashboard wireframe and prototype design
-                            </label>
-                          </div>
-          
-                          <div>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-pencil-square column3"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                              />
-                              <path
-                                fill-rule="evenodd"
-                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                              />
-                            </svg>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-x-lg column4"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                              />
-                            </svg>
-                          </div>
+                            <div class="column1">
+                              <input check type="checkbox" id="check1" checked/>
+                              <label for="check1" style="font-size: 14px">
+                                Planning for new dashboard wireframe and prototype design
+                              </label>
+                            </div>
+            
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square column3 weekBtn"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-x-lg column4 monthBtn"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                                />
+                              </svg>
+                            </div>
                         </div>
                         <div class="task task-data-container">
-                          <div class="column1">
-                            <input type="checkbox" id="check1" />
-                            <label for="check1" style="font-size: 14px">
-                              Planning for new dashboard wireframe and prototype design
-                            </label>
-                          </div>
-          
-                          <div>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-pencil-square column3"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                              />
-                              <path
-                                fill-rule="evenodd"
-                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                              />
-                            </svg>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-x-lg column4"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                              />
-                            </svg>
-                          </div>
+                            <div class="column1">
+                              <input  type="checkbox" id="check1" />
+                              <label for="check1" style="font-size: 14px">
+                                Planning for new dashboard wireframe and prototype design
+                              </label>
+                            </div>
+            
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square column3 weekBtn"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-x-lg column4 monthBtn"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                                />
+                              </svg>
+                            </div>
                         </div>
                         <div class="task task-data-container">
-                          <div class="column1">
-                            <input type="checkbox" id="check1" />
-                            <label for="check1" style="font-size: 14px">
-                              Planning for new dashboard wireframe and prototype design
-                            </label>
-                          </div>
-          
-                          <div>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-pencil-square column3"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                              />
-                              <path
-                                fill-rule="evenodd"
-                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                              />
-                            </svg>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-x-lg column4"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                              />
-                            </svg>
-                          </div>
+                            <div class="column1">
+                              <input  type="checkbox" id="check1" />
+                              <label for="check1" style="font-size: 14px">
+                                Planning for new dashboard wireframe and prototype design
+                              </label>
+                            </div>
+            
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square column3 weekBtn"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-x-lg column4 monthBtn"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                                />
+                              </svg>
+                            </div>
                         </div>
                         <div class="task task-data-container">
-                          <div class="column1">
-                            <input type="checkbox" id="check1" />
-                            <label for="check1" style="font-size: 14px">
-                              Planning for new dashboard wireframe and prototype design
-                            </label>
-                          </div>
-          
-                          <div>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-pencil-square column3"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                              />
-                              <path
-                                fill-rule="evenodd"
-                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                              />
-                            </svg>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-x-lg column4"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                              />
-                            </svg>
-                          </div>
+                            <div class="column1">
+                              <input  type="checkbox" id="check1" />
+                              <label for="check1" style="font-size: 14px">
+                                Planning for new dashboard wireframe and prototype design
+                              </label>
+                            </div>
+            
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square column3 weekBtn"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                />
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-x-lg column4 monthBtn"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                                />
+                              </svg>
+                            </div>
                         </div>
                       </div>
                       <div class="todo-teamMembers-container">
                         <div class="todo-list-container">
                           <div class="todo todo-header-container">
-                            <h4 class="todo-column1 todo-header">Todo</h4>
+                            <h4 class="todo-column1 todo-header ">Todo</h4>
                             <div>
-                              <button class="todo-column2">Today</button>
-                              <button class="todo-column3">Week</button>
-                              <button class="todo-column4">Month</button>
+                              <button class="todo-column2 todayBtn">Today</button>
+                              <button class="todo-column3 weekBtn">Week</button>
+                              <button class="todo-column4 monthBtn">Month</button>
                             </div>
                           </div>
                           <div class="todo todo-data-container">
                             <div class="todo-column1">
-                              <input type="checkbox" id="check1" />
-                              <label for="check1" style="font-size: 10px">
+                              <input check type="checkbox" id="check11" checked />
+                              <label for="check11" style="font-size: 10px">
                                 <h6>Dashboard Design Structure</h6>
                                 <p>10:30 AM</p>
                               </label>
@@ -553,8 +553,8 @@
                           </div>
                           <div class="todo todo-data-container">
                             <div class="todo-column1">
-                              <input type="checkbox" id="check1" />
-                              <label for="check1" style="font-size: 10px">
+                              <input check checked type="checkbox" id="check12" />
+                              <label for="check12" style="font-size: 10px">
                                 <h6>Dashboard Design Structure</h6>
                                 <p>10:30 AM</p>
                               </label>
@@ -581,8 +581,8 @@
                           </div>
                           <div class="todo todo-data-container">
                             <div class="todo-column1">
-                              <input type="checkbox" id="check1" />
-                              <label for="check1" style="font-size: 10px">
+                              <input type="checkbox" id="check13" />
+                              <label for="check13" style="font-size: 10px">
                                 <h6>Dashboard Design Structure</h6>
                                 <p>10:30 AM</p>
                               </label>
@@ -609,8 +609,8 @@
                           </div>
                           <div class="todo todo-data-container">
                             <div class="todo-column1">
-                              <input type="checkbox" id="check1" />
-                              <label for="check1" style="font-size: 10px">
+                              <input type="checkbox" id="check14" />
+                              <label for="check14" style="font-size: 10px">
                                 <h6>Dashboard Design Structure</h6>
                                 <p>10:30 AM</p>
                               </label>
@@ -638,7 +638,7 @@
                         </div>
                         <div class="teamMember-list-container">
                           <div class="todo todo-header-container">
-                            <h4 class="todo-column1 todo-header">Team Member</h4>
+                            <h4 class="todo-column1 ">Team Member</h4>
                             <div>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -667,22 +667,7 @@
                             </div>
           
                             <div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="svg replaced-svg"
-                              >
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
+                                <button class="todo-column2 todayBtn">Add</button>
                             </div>
                           </div>
                           <div class="todo todo-data-container">
@@ -694,22 +679,7 @@
                             </div>
           
                             <div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="svg replaced-svg"
-                              >
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
+                                <button class="todo-column2 todayBtn">Add</button>
                             </div>
                           </div>
                           <div class="todo todo-data-container">
@@ -721,22 +691,7 @@
                             </div>
           
                             <div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="svg replaced-svg"
-                              >
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
+                                <button class="todo-column2 todayBtn">Add</button>
                             </div>
                           </div>
                           <div class="todo todo-data-container">
@@ -748,54 +703,40 @@
                             </div>
           
                             <div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="svg replaced-svg"
-                              >
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
+                                <button class="todo-column2 todayBtn">Add</button>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                </div>
                 <!-- </div> -->
-                  <div class="corner-container">
+                <div class="corner-container">
                     <div class="letter-brief-badge-container">
                       <div class="brief-award-container">
                         <div class="brief-container">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="60"
-                            height="60"
+                            width="20"
+                            height="20"
                             fill="currentColor"
-                            class="bi bi-briefcase"
+                            class="bi bi-briefcase todayBtn breif"
                             viewBox="0 0 16 16"
+                            
                           >
                             <path
                               d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
                             />
                           </svg>
                           <p>Total Products</p>
-                          <h2>21K</h2>
+                          <h4>21K</h4>
                         </div>
                         <div class="badge-container">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="60"
-                            height="60"
+                            width="20"
+                            height="20"
                             fill="currentColor"
-                            class="bi bi-award"
+                            class="bi bi-award todayBtn breif"
                             viewBox="0 0 16 16"
                           >
                             <path
@@ -806,7 +747,7 @@
                             />
                           </svg>
                           <p>Total Awards</p>
-                          <h2>15K</h2>
+                          <h4>15K</h4>
                         </div>
                       </div>
                       <div class="letter-container">
@@ -815,7 +756,7 @@
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-envelope-check-fill"
+                          class="bi bi-envelope-check-fill todayBtn breif"
                           viewBox="0 0 16 16"
                         >
                           <path
@@ -835,9 +776,9 @@
                       <div class="marketing marketing-header-container">
                         <h4 class="marketing-column1">Marketing Campaigns</h4>
                         <div>
-                          <button class="marketing-column2">Today</button>
-                          <button class="marketing-column3">Week</button>
-                          <button class="marketing-column4">Month</button>
+                          <button class="marketing-column2 todayBtn">Today</button>
+                          <button class="marketing-column3 weekBtn">Week</button>
+                          <button class="marketing-column4 monthBtn">Month</button>
                         </div>
                       </div>
                       <div class="marketing marketing-data-container">
@@ -850,14 +791,17 @@
                         </div>
           
                         <div>
-                          <span class="marketing-column2">$1045,120</span>
-                          <span class="marketing-column3">45%</span>
+                          <span class="marketing-column2 weekBtn">$1045,120</span>
+                          <span class="marketing-column3 weekBtn">45%</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="bi bi-arrow-clockwise marketing-column4"
+                            class="bi bi-arrow-clockwise marketing-column4 .breif,.badge{
+                                height: 60px;
+                                padding:10px;
+                            }"
                             viewBox="0 0 16 16"
                           >
                             <path
@@ -880,14 +824,17 @@
                         </div>
           
                         <div>
-                          <span class="marketing-column2">$1045,120</span>
-                          <span class="marketing-column3">45%</span>
+                          <span class="marketing-column2 weekBtn">$1045,120</span>
+                          <span class="marketing-column3 weekBtn">45%</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="bi bi-arrow-clockwise marketing-column4"
+                            class="bi bi-arrow-clockwise marketing-column4 .breif,.badge{
+                                height: 60px;
+                                padding:10px;
+                            }"
                             viewBox="0 0 16 16"
                           >
                             <path
@@ -910,14 +857,17 @@
                         </div>
           
                         <div>
-                          <span class="marketing-column2">$1045,120</span>
-                          <span class="marketing-column3">45%</span>
+                          <span class="marketing-column2 weekBtn">$1045,120</span>
+                          <span class="marketing-column3 weekBtn">45%</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="bi bi-arrow-clockwise marketing-column4"
+                            class="bi bi-arrow-clockwise marketing-column4 .breif,.badge{
+                                height: 60px;
+                                padding:10px;
+                            }"
                             viewBox="0 0 16 16"
                           >
                             <path
@@ -940,14 +890,17 @@
                         </div>
           
                         <div>
-                          <span class="marketing-column2">$1045,120</span>
-                          <span class="marketing-column3">45%</span>
+                          <span class="marketing-column2 weekBtn">$1045,120</span>
+                          <span class="marketing-column3 weekBtn">45%</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="bi bi-arrow-clockwise marketing-column4"
+                            class="bi bi-arrow-clockwise marketing-column4 .breif,.badge{
+                                height: 60px;
+                                padding:10px;
+                            }"
                             viewBox="0 0 16 16"
                           >
                             <path
@@ -970,14 +923,17 @@
                         </div>
           
                         <div>
-                          <span class="marketing-column2">$1045,120</span>
-                          <span class="marketing-column3">45%</span>
+                          <span class="marketing-column2 weekBtn">$1045,120</span>
+                          <span class="marketing-column3 weekBtn">45%</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="bi bi-arrow-clockwise marketing-column4"
+                            class="bi bi-arrow-clockwise marketing-column4 .breif,.badge{
+                                height: 60px;
+                                padding:10px;
+                            }"
                             viewBox="0 0 16 16"
                           >
                             <path
