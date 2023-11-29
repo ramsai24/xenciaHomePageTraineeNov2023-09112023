@@ -21,6 +21,7 @@
       <div class="header-container">
         <div class="logo-container">
           <img
+            hexaLogo
             src="https://res.cloudinary.com/daoquetki/image/upload/v1701175715/task3b/nyn360lih9exghxs9jhs.png"
             alt="hexLogo"
           />
@@ -29,7 +30,7 @@
             width="16"
             height="16"
             fill="currentColor"
-            class="bi bi-list"
+            class="bi bi-list threeDash"
             viewBox="0 0 16 16"
           >
             <path
@@ -39,14 +40,15 @@
           </svg>
         </div>
         <div class="nav-container">
-          <button>
+          <button class="customizeBtn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
-              height="16"
+              height="12"
               fill="currentColor"
               class="bi bi-highlighter"
               viewBox="0 0 16 16"
+              style="font-weight: 600"
             >
               <path
                 fill-rule="evenodd"
@@ -129,7 +131,7 @@
                 />
               </svg>
             </a>
-            <div>
+            <div class="headerProfile-container">
               <a>
                 <img
                   profile
@@ -162,731 +164,871 @@
       </div>
       <div class="content-container">
         <div class="side-nav-container">
-          <ul>
-            Dashboard
-            <li>Demo1</li>
-            <li>Demo2</li>
-            <li>Demo3</li>
-            <li>Demo4</li>
-            <li>Demo5</li>
-            <li>Demo6</li>
-            <li>Demo7</li>
-            <li>Demo8</li>
-            <li>Demo9</li>
-            <li>Demo10</li>
-          </ul>
-          <ul>
-            Layout
-          </ul>
-          <ul>
-            Chanelog
-          </ul>
-          <h4>Application</h4>
-          <ul>
-            <li>Email</li>
-            <li>Chat</li>
-            <li>eCommerce</li>
-          </ul>
-        </div>
-        <div class="main-content-container">
-          <div class="demo9">
-            <h3>Demo9</h3>
-            <div class="demo9-container">
-              <img
-                size
-                src="https://res.cloudinary.com/daoquetki/image/upload/v1701234797/task3b/o1yuadnjxbplxblojjol.png"
-                alt="cup"
-              />
-              <img
-                size
-                src="https://res.cloudinary.com/daoquetki/image/upload/v1701234785/task3b/lzjwcbmd31wglmgxgjm3.png"
-                alt="cup"
-              />
-            </div>
-            <div class="task-list-container">
-              <div class="task task-header-container">
-                <h4 class="column1">Task List</h4>
-                <div>
-                  <button class="column2">Today</button>
-                  <button class="column3">Week</button>
-                  <button class="column4">Month</button>
-                </div>
-              </div>
-              <div class="task task-data-container">
-                <div class="column1">
-                  <input type="checkbox" id="check1" />
-                  <label for="check1" style="font-size: 14px">
-                    Planning for new dashboard wireframe and prototype design
-                  </label>
-                </div>
-
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-pencil-square column3"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-x-lg column4"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="task task-data-container">
-                <div class="column1">
-                  <input type="checkbox" id="check1" />
-                  <label for="check1" style="font-size: 14px">
-                    Planning for new dashboard wireframe and prototype design
-                  </label>
-                </div>
-
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-pencil-square column3"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-x-lg column4"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="task task-data-container">
-                <div class="column1">
-                  <input type="checkbox" id="check1" />
-                  <label for="check1" style="font-size: 14px">
-                    Planning for new dashboard wireframe and prototype design
-                  </label>
-                </div>
-
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-pencil-square column3"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-x-lg column4"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="task task-data-container">
-                <div class="column1">
-                  <input type="checkbox" id="check1" />
-                  <label for="check1" style="font-size: 14px">
-                    Planning for new dashboard wireframe and prototype design
-                  </label>
-                </div>
-
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-pencil-square column3"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-x-lg column4"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="task task-data-container">
-                <div class="column1">
-                  <input type="checkbox" id="check1" />
-                  <label for="check1" style="font-size: 14px">
-                    Planning for new dashboard wireframe and prototype design
-                  </label>
-                </div>
-
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-pencil-square column3"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-x-lg column4"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="todo-teamMembers-container">
-              <div class="todo-list-container">
-                <div class="todo todo-header-container">
-                  <h4 class="todo-column1 todo-header">Todo</h4>
-                  <div>
-                    <button class="todo-column2">Today</button>
-                    <button class="todo-column3">Week</button>
-                    <button class="todo-column4">Month</button>
-                  </div>
-                </div>
-                <div class="todo todo-data-container">
-                  <div class="todo-column1">
-                    <input type="checkbox" id="check1" />
-                    <label for="check1" style="font-size: 10px">
-                      <h6>Dashboard Design Structure</h6>
-                      <p>10:30 AM</p>
-                    </label>
-                  </div>
-
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-                <div class="todo todo-data-container">
-                  <div class="todo-column1">
-                    <input type="checkbox" id="check1" />
-                    <label for="check1" style="font-size: 10px">
-                      <h6>Dashboard Design Structure</h6>
-                      <p>10:30 AM</p>
-                    </label>
-                  </div>
-
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-                <div class="todo todo-data-container">
-                  <div class="todo-column1">
-                    <input type="checkbox" id="check1" />
-                    <label for="check1" style="font-size: 10px">
-                      <h6>Dashboard Design Structure</h6>
-                      <p>10:30 AM</p>
-                    </label>
-                  </div>
-
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-                <div class="todo todo-data-container">
-                  <div class="todo-column1">
-                    <input type="checkbox" id="check1" />
-                    <label for="check1" style="font-size: 10px">
-                      <h6>Dashboard Design Structure</h6>
-                      <p>10:30 AM</p>
-                    </label>
-                  </div>
-
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="teamMember-list-container">
-                <div class="todo todo-header-container">
-                  <h4 class="todo-column1 todo-header">Team Member</h4>
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-                <div class="todo todo-data-container">
-                  <div class="todo-column1">
-                    <label style="font-size: 10px">
-                      <h6>Dashboard Design Structure</h6>
-                      <p>10:30 AM</p>
-                    </label>
-                  </div>
-
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-                <div class="todo todo-data-container">
-                  <div class="todo-column1">
-                    <label style="font-size: 10px">
-                      <h6>Dashboard Design Structure</h6>
-                      <p>10:30 AM</p>
-                    </label>
-                  </div>
-
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-                <div class="todo todo-data-container">
-                  <div class="todo-column1">
-                    <label style="font-size: 10px">
-                      <h6>Dashboard Design Structure</h6>
-                      <p>10:30 AM</p>
-                    </label>
-                  </div>
-
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-                <div class="todo todo-data-container">
-                  <div class="todo-column1">
-                    <label style="font-size: 10px">
-                      <h6>Dashboard Design Structure</h6>
-                      <p>10:30 AM</p>
-                    </label>
-                  </div>
-
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="svg replaced-svg"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="corner-container">
-          <div class="letter-brief-badge-container">
-            <div class="brief-award-container">
-              <div class="brief-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="60"
-                  height="60"
-                  fill="currentColor"
-                  class="bi bi-briefcase"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
-                  />
-                </svg>
-                <p>Total Products</p>
-                <h2>21K</h2>
-              </div>
-              <div class="badge-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="60"
-                  height="60"
-                  fill="currentColor"
-                  class="bi bi-award"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"
-                  />
-                  <path
-                    d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"
-                  />
-                </svg>
-                <p>Total Awards</p>
-                <h2>15K</h2>
-              </div>
-            </div>
-            <div class="letter-container">
+          <div class="side-nav-container-icons">
+            <ul class="ul">
+              <i class="fa-solid fa-table-cells"></i>
+              <li num class="list-item">1</li>
+              <li num  class="list-item">2</li>
+              <li num  class="list-item">3</li>
+              <li num  class="list-item">4</li>
+              <li num  class="list-item">5</li>
+              <li num  class="list-item">6</li>
+              <li num  class="list-item">7</li>
+              <li num  class="list-item">8</li>
+              <li num  class="list-item">9</li>
+              <li num  class="list-item">10</linum>
+            </ul>
+            <ul class="ul">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-envelope-check-fill"
+                class="bi bi-columns"
                 viewBox="0 0 16 16"
               >
                 <path
-                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207z"
-                />
-                <path
-                  d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
+                  d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm8.5 0v8H15V2zm0 9v3H15v-3zm-1-9H1v3h6.5zM1 14h6.5V6H1z"
                 />
               </svg>
-              <div>
-                <h2>Subscribe To Our Newsletter</h2>
-                <p>Lorem ipsum dolor sit amet, conetetur</p>
-              </div>
-            </div>
+            </ul>
+            <ul class="ul">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-graph-up-arrow"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </ul>
+            <h4 num>A</h4>
+            <ul class="ul">
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope-open"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2"
+                  />
+                </svg>
+              </li>
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chat-left-dots-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                  />
+                </svg>
+              </li>
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-basket"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+                  />
+                </svg>
+              </li>
+            </ul>
           </div>
-          <div class="marketingCampaigns-list-container">
-            <div class="marketing marketing-header-container">
-              <h4 class="marketing-column1">Marketing Campaigns</h4>
-              <div>
-                <button class="marketing-column2">Today</button>
-                <button class="marketing-column3">Week</button>
-                <button class="marketing-column4">Month</button>
-              </div>
-            </div>
-            <div class="marketing marketing-data-container">
-              <div class="marketing-column1">
-                <img
-                  src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
-                  alt="companyLogo"
-                />
-                <span>Microsoft Company</span>
-              </div>
-
-              <div>
-                <span class="marketing-column2">$1045,120</span>
-                <span class="marketing-column3">45%</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-clockwise marketing-column4"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
-                  />
-                  <path
-                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="marketing marketing-data-container">
-              <div class="marketing-column1">
-                <img
-                  src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
-                  alt="companyLogo"
-                />
-                <span>Microsoft Company</span>
-              </div>
-
-              <div>
-                <span class="marketing-column2">$1045,120</span>
-                <span class="marketing-column3">45%</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-clockwise marketing-column4"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
-                  />
-                  <path
-                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="marketing marketing-data-container">
-              <div class="marketing-column1">
-                <img
-                  src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
-                  alt="companyLogo"
-                />
-                <span>Microsoft Company</span>
-              </div>
-
-              <div>
-                <span class="marketing-column2">$1045,120</span>
-                <span class="marketing-column3">45%</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-clockwise marketing-column4"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
-                  />
-                  <path
-                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="marketing marketing-data-container">
-              <div class="marketing-column1">
-                <img
-                  src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
-                  alt="companyLogo"
-                />
-                <span>Microsoft Company</span>
-              </div>
-
-              <div>
-                <span class="marketing-column2">$1045,120</span>
-                <span class="marketing-column3">45%</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-clockwise marketing-column4"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
-                  />
-                  <path
-                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="marketing marketing-data-container">
-              <div class="marketing-column1">
-                <img
-                  src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
-                  alt="companyLogo"
-                />
-                <span>Microsoft Company</span>
-              </div>
-
-              <div>
-                <span class="marketing-column2">$1045,120</span>
-                <span class="marketing-column3">45%</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-clockwise marketing-column4"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
-                  />
-                  <path
-                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
-                  />
-                </svg>
-              </div>
-            </div>
+          <div class="side-nav-container-names">
+            <ul class="ul">
+              Dashboard
+              <li  class="list-item">Demo1</li>
+              <li  class="list-item">Demo2</li>
+              <li  class="list-item">Demo3</li>
+              <li class="list-item">Demo4</li>
+              <li  class="list-item">Demo5</li>
+              <li  class="list-item">Demo6</li>
+              <li  class="list-item">Demo7</li>
+              <li  class="list-item">Demo8</li>
+              <li  class="list-item">Demo9</li>
+              <li class="list-item">Demo10</li>
+            </ul>
+            <ul class="ul">
+              Layout
+            </ul>
+            <ul class="ul">
+              Chanelog
+            </ul class="ul">
+            <h4>Application</h4>
+            <ul class="ul">
+              <li class="list-item">Email</li>
+              <li class="list-item">Chat</li>
+              <li class="list-item">eCommerce</li>
+            </ul>
           </div>
         </div>
+        <div class="main">
+            <div class="demo9-heading-container">
+                <h3>Demo9</h3>
+                <ul demo9>
+                    <li><i class="fa-solid fa-house"></i>Dashboard</li>
+                    <li><i class="fa-regular fa-circle-dot"></i>Demo9</li>
+                </ul>
+               
+
+            </div>
+            <div class="middle-corner-container">
+                <div class="main-content-container">
+                    <!-- <div class="demo9"> -->
+                       
+                      
+                      <div class="demo9-cup-pie-images-container">
+                        <img
+                          size
+                          src="https://res.cloudinary.com/daoquetki/image/upload/v1701234797/task3b/o1yuadnjxbplxblojjol.png"
+                          alt="cup"
+                        />
+                        <img
+                          size
+                          src="https://res.cloudinary.com/daoquetki/image/upload/v1701234785/task3b/lzjwcbmd31wglmgxgjm3.png"
+                          alt="cup"
+                        />
+                      </div>
+                      <div class="task-list-container">
+                        <div class="task task-header-container">
+                          <h4 class="column1">Task List</h4>
+                          <div>
+                            <button class="column2">Today</button>
+                            <button class="column3">Week</button>
+                            <button class="column4">Month</button>
+                          </div>
+                        </div>
+                        <div class="task task-data-container">
+                          <div class="column1">
+                            <input type="checkbox" id="check1" />
+                            <label for="check1" style="font-size: 14px">
+                              Planning for new dashboard wireframe and prototype design
+                            </label>
+                          </div>
+          
+                          <div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-square column3"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-x-lg column4"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="task task-data-container">
+                          <div class="column1">
+                            <input type="checkbox" id="check1" />
+                            <label for="check1" style="font-size: 14px">
+                              Planning for new dashboard wireframe and prototype design
+                            </label>
+                          </div>
+          
+                          <div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-square column3"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-x-lg column4"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="task task-data-container">
+                          <div class="column1">
+                            <input type="checkbox" id="check1" />
+                            <label for="check1" style="font-size: 14px">
+                              Planning for new dashboard wireframe and prototype design
+                            </label>
+                          </div>
+          
+                          <div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-square column3"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-x-lg column4"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="task task-data-container">
+                          <div class="column1">
+                            <input type="checkbox" id="check1" />
+                            <label for="check1" style="font-size: 14px">
+                              Planning for new dashboard wireframe and prototype design
+                            </label>
+                          </div>
+          
+                          <div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-square column3"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-x-lg column4"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="task task-data-container">
+                          <div class="column1">
+                            <input type="checkbox" id="check1" />
+                            <label for="check1" style="font-size: 14px">
+                              Planning for new dashboard wireframe and prototype design
+                            </label>
+                          </div>
+          
+                          <div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-pencil-square column3"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-x-lg column4"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="todo-teamMembers-container">
+                        <div class="todo-list-container">
+                          <div class="todo todo-header-container">
+                            <h4 class="todo-column1 todo-header">Todo</h4>
+                            <div>
+                              <button class="todo-column2">Today</button>
+                              <button class="todo-column3">Week</button>
+                              <button class="todo-column4">Month</button>
+                            </div>
+                          </div>
+                          <div class="todo todo-data-container">
+                            <div class="todo-column1">
+                              <input type="checkbox" id="check1" />
+                              <label for="check1" style="font-size: 10px">
+                                <h6>Dashboard Design Structure</h6>
+                                <p>10:30 AM</p>
+                              </label>
+                            </div>
+          
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="todo todo-data-container">
+                            <div class="todo-column1">
+                              <input type="checkbox" id="check1" />
+                              <label for="check1" style="font-size: 10px">
+                                <h6>Dashboard Design Structure</h6>
+                                <p>10:30 AM</p>
+                              </label>
+                            </div>
+          
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="todo todo-data-container">
+                            <div class="todo-column1">
+                              <input type="checkbox" id="check1" />
+                              <label for="check1" style="font-size: 10px">
+                                <h6>Dashboard Design Structure</h6>
+                                <p>10:30 AM</p>
+                              </label>
+                            </div>
+          
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="todo todo-data-container">
+                            <div class="todo-column1">
+                              <input type="checkbox" id="check1" />
+                              <label for="check1" style="font-size: 10px">
+                                <h6>Dashboard Design Structure</h6>
+                                <p>10:30 AM</p>
+                              </label>
+                            </div>
+          
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="teamMember-list-container">
+                          <div class="todo todo-header-container">
+                            <h4 class="todo-column1 todo-header">Team Member</h4>
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="todo todo-data-container">
+                            <div class="todo-column1">
+                              <label style="font-size: 10px">
+                                <h6>Dashboard Design Structure</h6>
+                                <p>10:30 AM</p>
+                              </label>
+                            </div>
+          
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="todo todo-data-container">
+                            <div class="todo-column1">
+                              <label style="font-size: 10px">
+                                <h6>Dashboard Design Structure</h6>
+                                <p>10:30 AM</p>
+                              </label>
+                            </div>
+          
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="todo todo-data-container">
+                            <div class="todo-column1">
+                              <label style="font-size: 10px">
+                                <h6>Dashboard Design Structure</h6>
+                                <p>10:30 AM</p>
+                              </label>
+                            </div>
+          
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="todo todo-data-container">
+                            <div class="todo-column1">
+                              <label style="font-size: 10px">
+                                <h6>Dashboard Design Structure</h6>
+                                <p>10:30 AM</p>
+                              </label>
+                            </div>
+          
+                            <div>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="svg replaced-svg"
+                              >
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <!-- </div> -->
+                  <div class="corner-container">
+                    <div class="letter-brief-badge-container">
+                      <div class="brief-award-container">
+                        <div class="brief-container">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="60"
+                            height="60"
+                            fill="currentColor"
+                            class="bi bi-briefcase"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
+                            />
+                          </svg>
+                          <p>Total Products</p>
+                          <h2>21K</h2>
+                        </div>
+                        <div class="badge-container">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="60"
+                            height="60"
+                            fill="currentColor"
+                            class="bi bi-award"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"
+                            />
+                            <path
+                              d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"
+                            />
+                          </svg>
+                          <p>Total Awards</p>
+                          <h2>15K</h2>
+                        </div>
+                      </div>
+                      <div class="letter-container">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-envelope-check-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207z"
+                          />
+                          <path
+                            d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
+                          />
+                        </svg>
+                        <div>
+                          <h2>Subscribe To Our Newsletter</h2>
+                          <p>Lorem ipsum dolor sit amet, conetetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="marketingCampaigns-list-container">
+                      <div class="marketing marketing-header-container">
+                        <h4 class="marketing-column1">Marketing Campaigns</h4>
+                        <div>
+                          <button class="marketing-column2">Today</button>
+                          <button class="marketing-column3">Week</button>
+                          <button class="marketing-column4">Month</button>
+                        </div>
+                      </div>
+                      <div class="marketing marketing-data-container">
+                        <div class="marketing-column1">
+                          <img
+                            src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
+                            alt="companyLogo"
+                          />
+                          <span>Microsoft Company</span>
+                        </div>
+          
+                        <div>
+                          <span class="marketing-column2">$1045,120</span>
+                          <span class="marketing-column3">45%</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-clockwise marketing-column4"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+                            />
+                            <path
+                              d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="marketing marketing-data-container">
+                        <div class="marketing-column1">
+                          <img
+                            src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
+                            alt="companyLogo"
+                          />
+                          <span>Microsoft Company</span>
+                        </div>
+          
+                        <div>
+                          <span class="marketing-column2">$1045,120</span>
+                          <span class="marketing-column3">45%</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-clockwise marketing-column4"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+                            />
+                            <path
+                              d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="marketing marketing-data-container">
+                        <div class="marketing-column1">
+                          <img
+                            src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
+                            alt="companyLogo"
+                          />
+                          <span>Microsoft Company</span>
+                        </div>
+          
+                        <div>
+                          <span class="marketing-column2">$1045,120</span>
+                          <span class="marketing-column3">45%</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-clockwise marketing-column4"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+                            />
+                            <path
+                              d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="marketing marketing-data-container">
+                        <div class="marketing-column1">
+                          <img
+                            src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
+                            alt="companyLogo"
+                          />
+                          <span>Microsoft Company</span>
+                        </div>
+          
+                        <div>
+                          <span class="marketing-column2">$1045,120</span>
+                          <span class="marketing-column3">45%</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-clockwise marketing-column4"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+                            />
+                            <path
+                              d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="marketing marketing-data-container">
+                        <div class="marketing-column1">
+                          <img
+                            src="https://res.cloudinary.com/daoquetki/image/upload/v1701242208/task3b/gdbvqdubf12rysccaijb.png"
+                            alt="companyLogo"
+                          />
+                          <span>Microsoft Company</span>
+                        </div>
+          
+                        <div>
+                          <span class="marketing-column2">$1045,120</span>
+                          <span class="marketing-column3">45%</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-clockwise marketing-column4"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+                            />
+                            <path
+                              d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-container">
+                      <div pic>
+                        <img
+                          profileContainer
+                          src="https://res.cloudinary.com/daoquetki/image/upload/v1701176693/task3b/wzhmpgkynvy8vgxa4bdo.jpg"
+                          alt="profile"
+                        />
+                        <img
+                          profileDisplay
+                          src="https://res.cloudinary.com/daoquetki/image/upload/v1701249649/task3b/nl4ixzoqs27eglrlukac.jpg"
+                          alt="profile"
+                        />
+                      </div>
+          
+                      <div profileNameDescription>
+                        <h1>Rober Clinton</h1>
+                        <p>Best Seller of the last month</p>
+                      </div>
+                      <div icons>
+                        <a href="#">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-globe"></i>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+           
+
+        </div>
+
+       
       </div>
     </div>
     <script
