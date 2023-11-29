@@ -1,3 +1,24 @@
+.bg-container {
+  background-size: cover;
+  min-height: 100vh;
+}
+.header-container {
+  display: flex;
+  border: 1px solid black;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.nav-items-container {
+  display: flex;
+}
+
 img[profile] {
   width: 40px;
   border-radius: 50%;
@@ -17,4 +38,108 @@ div[ab] ul {
 
 div[ab]:hover ul {
   visibility: visible;
+}
+
+.content-container {
+  border: 1px solid seagreen;
+}
+
+.side-nav-container {
+  border: 1px solid blue;
+  width: 200px;
+}
+
+.content-container {
+  display: flex;
+}
+
+.main-content-container {
+}
+
+img[size] {
+  width: 350px;
+}
+
+.demo9-container {
+  display: flex;
+}
+
+.brief-award-container {
+  display: flex;
+}
+
+.letter-container {
+  display: flex;
+}
+
+.task-list-container {
+  width: 800px;
+
+  border: 1px solid violet;
+}
+
+.task,
+.marketing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1 {
+  width: 400px;
+}
+
+.column2,
+.column3,
+.column4 {
+  width: 100px;
+}
+
+.todo-teamMembers-container {
+  display: flex;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-list-container,
+.teamMember-list-container {
+  width: 400px;
+  margin-left: 10px;
+}
+.teamMember-list-container {
+  margin-left: 10px;
+}
+
+.todo-column1 {
+  width: 300px;
+  font-size: 12px;
+}
+
+.todo-header {
+  width: 50px;
+}
+
+.todo-column2,
+.todo-column3,
+.todo-column4 {
+  width: 50px;
+}
+
+.marketingCampaigns-list-container {
+  width: 400px;
+
+  border: 1px solid green;
+}
+
+.marketing-column1 {
+  width: 200px;
+  font-size: 12px;
+}
+
+.marketing-column2,
+.marketing-column3,
+.marketing-column4 {
+  width: 50px;
 }
