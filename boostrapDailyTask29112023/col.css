@@ -1,0 +1,41 @@
+.bg-container {
+  background-size: cover;
+  border: 4px solid green;
+  padding: 5px;
+  background-image: linear-gradient(to right, violet, skyblue);
+}
+
+.top-row,
+.bottom-row,
+.footer-row {
+  /* border: 2px solid white; */
+  margin: 12px;
+  padding: 15px;
+}
+
+.middle-row {
+  background-color: #ffffff;
+}
+
+img[rounded] {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+img[brand] {
+  height: 60px;
+  width: 200px;
+  /* border: 1px solid red; */
+}
+
+ul {
+  list-style-type: none;
+}
+h3 {
+  border-radius: 4px;
+}
+
+.transparent {
+  background-color: transparent !important;
+}

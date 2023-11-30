@@ -478,3 +478,7 @@ div[icons] {
 a[footericons]{
     margin:10px;
 }
+
+.bg-container .header-container .logo-container #checkTog:checked ~ .bg-container .content-container .side-nav-container .side-nav-container-names{
+    display: none;
+}
