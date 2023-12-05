@@ -1,0 +1,20 @@
+div[buttons] {
+  width: 900px;
+  border: 2px solid salmon;
+}
+
+div[input] {
+  width: 900px;
+  /* border: 2px solid magenta; */
+}
+
+label[inputEl] {
+  display: inline-block;
+  width: 200px !important;
+  border: 1px solid green;
+}
+
+input[inputEl] {
+  display: inline-block;
+  width: 600px;
+}
