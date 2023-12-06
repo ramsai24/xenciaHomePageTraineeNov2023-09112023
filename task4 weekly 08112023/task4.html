@@ -10,77 +10,77 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="task4.css" />
   </head>
   <body>
-    <div>
+    <div class="bg-container">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button
-              class="nav-link active"
-              id="nav-home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-home"
-              type="button"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-            >
-              General
-            </button>
-            <button
-              class="nav-link"
-              id="nav-profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-profile"
-              type="button"
-              role="tab"
-              aria-controls="nav-profile"
-              aria-selected="false"
-            >
-              Company
-            </button>
-            <button
-              class="nav-link"
-              id="nav-contact-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-contact"
-              type="button"
-              role="tab"
-              aria-controls="nav-contact"
-              aria-selected="false"
-            >
-              Address
-            </button>
-            <button
-              class="nav-link"
-              id="nav-academic-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-academic"
-              type="button"
-              role="tab"
-              aria-controls="nav-academic"
-              aria-selected="false"
-            >
-              Academic
-            </button>
-            <button
-              class="nav-link"
-              id="nav-skills-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-skills"
-              type="button"
-              role="tab"
-              aria-controls="nav-skills"
-              aria-selected="false"
-            >
-              Skills
-            </button>
-          </div>
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            General
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Company
+          </button>
+          <button
+            class="nav-link"
+            id="nav-contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-contact"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Address
+          </button>
+          <button
+            class="nav-link"
+            id="nav-academic-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-academic"
+            type="button"
+            role="tab"
+            aria-controls="nav-academic"
+            aria-selected="false"
+          >
+            Academic
+          </button>
+          <button
+            class="nav-link"
+            id="nav-skills-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-skills"
+            type="button"
+            role="tab"
+            aria-controls="nav-skills"
+            aria-selected="false"
+          >
+            Skills
+          </button>
+        </div>
       </nav>
-      <div class="tab-content" id="nav-tabContent">
+      <div class="tab-content content-container" id="nav-tabContent">
         <div
-          class="tab-pane fade show active"
+          class="tab-pane fade show active general-container"
           id="nav-home"
           role="tabpanel"
           aria-labelledby="nav-home-tab"
@@ -104,18 +104,20 @@
                 <input inputEl id="Company" type="text" />
               </div>
             </div>
-            <div>
-              <button>Cancel</button>
-            </div>
-            <div>
-              <button>1</button>
+            <div class="button-container">
+              <div>
+                <button>Cancel</button>
+              </div>
+              <div>
+                <button>1</button>
 
-              <button>Next</button>
+                <button>Next</button>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane fade company-container"
           id="nav-profile"
           role="tabpanel"
           aria-labelledby="nav-profile-tab"
@@ -139,18 +141,22 @@
                 <input inputEl id="Company" type="text" />
               </div>
             </div>
-            <div>
-              <button>Cancel</button>
+            <div class="button-container">
+              <div>
+                <button>Cancel</button>
+              </div>
+              <div>
+                <button>Previous</button>
+                <button>2</button>
+                <button>Next</button>
+              </div>
+
             </div>
-            <div>
-              <button>Previous</button>
-              <button>2</button>
-              <button>Next</button>
-            </div>
+           
           </div>
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane fade address-container"
           id="nav-contact"
           role="tabpanel"
           aria-labelledby="nav-contact-tab"
@@ -174,18 +180,22 @@
                 <input inputEl id="Company" type="text" />
               </div>
             </div>
-            <div>
-              <button>Cancel</button>
+            <div class="button-container">
+              <div>
+                <button>Cancel</button>
+              </div>
+              <div>
+                <button>Previous</button>
+                <button>3</button>
+                <button>Next</button>
+              </div>
+
             </div>
-            <div>
-              <button>Previous</button>
-              <button>3</button>
-              <button>Next</button>
-            </div>
+           
           </div>
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane fade academic-container"
           id="nav-academic"
           role="tabpanel"
           aria-labelledby="nav-academic-tab"
@@ -209,18 +219,20 @@
                 <input inputEl id="Company" type="text" />
               </div>
             </div>
-            <div>
-              <button>Cancel</button>
-            </div>
-            <div>
-              <button>Previous</button>
-              <button>4</button>
-              <button>Next</button>
+            <div class="button-container">
+              <div>
+                <button>Cancel</button>
+              </div>
+              <div>
+                <button>Previous</button>
+                <button>4</button>
+                <button>Next</button>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane fade skill-container"
           id="nav-skills"
           role="tabpanel"
           aria-labelledby="nav-skills-tab"
@@ -244,13 +256,15 @@
                 <input inputEl id="Company" type="text" />
               </div>
             </div>
-            <div>
-              <button>Submit</button>
-              <button>Cancel</button>
-            </div>
-            <div>
-              <button>Previous</button>
-              <button>5</button>
+            <div class="button-container">
+              <div>
+                <button>Submit</button>
+                <button>Cancel</button>
+              </div>
+              <div>
+                <button>Previous</button>
+                <button>5</button>
+              </div>
             </div>
           </div>
         </div>
