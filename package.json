@@ -1,0 +1,27 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "express": "^4.18.2",
+    "node": "^21.2.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramsai24/xenciaHomePageTraineeNov2023-09112023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramsai24/xenciaHomePageTraineeNov2023-09112023/issues"
+  },
+  "homepage": "https://github.com/ramsai24/xenciaHomePageTraineeNov2023-09112023#readme"
+}
