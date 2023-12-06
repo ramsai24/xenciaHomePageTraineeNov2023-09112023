@@ -1,5 +1,6 @@
 {
   "livePreview.httpHeaders": {
     "Accept-Ranges": "bytes"
-  }
+  },
+  "livePreview.defaultPreviewPath": "/HTMLandCSS/task4 weekly 08112023/task4.html"
 }
