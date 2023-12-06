@@ -50,3 +50,22 @@ input[inputEl] {
   display: inline-block;
   width: 600px;
 }
+
+#nav-profile,
+#nav-contact,
+#nav-contact,
+#nav-academic,
+#nav-skills {
+  display: none;
+}
+
+#nav-home-tab {
+  background-color: blue;
+}
+
+#nav-profile-tab,
+#nav-contact-tab,
+#nav-academic-tab,
+#nav-skills-tab {
+  background-color: red;
+}
