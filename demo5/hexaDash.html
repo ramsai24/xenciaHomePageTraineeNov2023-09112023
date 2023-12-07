@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="hexaDash.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/62a994001e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="bg-container">
+      <div class="header-container">
+        <div class="logo-container">
+          <img
+            hexaLogo
+            src="https://res.cloudinary.com/daoquetki/image/upload/v1701175715/task3b/nyn360lih9exghxs9jhs.png"
+            alt="hexLogo"
+          />
+          <!-- <img
+          hexaLogo-567px
+          src="https://res.cloudinary.com/daoquetki/image/upload/v1701340572/task3b/jrk2ryhgcxxhm71idsdo.png"
+          alt="hexLogo"
+        /> -->
+          <!-- <input ch type="checkbox" id="checkTog"/> -->
+          <label for="checkTog">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list threeDash"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </label>
+        </div>
+        <div class="nav-container">
+          <button class="customizeBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="12"
+              fill="currentColor"
+              class="bi bi-highlighter"
+              viewBox="0 0 16 16"
+              style="font-weight: 600"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07.435-.414Zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254-2.905-2.906Zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065 2.85 2.85M5.293 13.5 2.5 10.707v1.586L3.707 13.5z"
+              />
+            </svg>
+            <span customize>Customize...</span>
+            
+          </button>
+          <nav class="nav-items-container">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                />
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-bell"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+                />
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-gear"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"
+                />
+                <path
+                  d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
+                />
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-flag-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"
+                />
+              </svg>
+            </a>
+            <div class="headerProfile-container">
+              <a>
+                <img
+                  profile
+                  src="https://res.cloudinary.com/daoquetki/image/upload/v1701176693/task3b/wzhmpgkynvy8vgxa4bdo.jpg"
+                  alt="profile"
+                />
+              </a>
+              <div ab>
+                Ram Sai<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-compact-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+                  />
+                </svg>
+                <ul hoverUL>
+                  <li>Profile</li>
+                  <li>settings</li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="side-nav-container">
+          <div class="side-nav-container-icons">
+            <ul class="ul">
+              <i class="fa-solid fa-table-cells"></i>
+              <li num class="list-item">1</li>
+              <li num  class="list-item">2</li>
+              <li num  class="list-item">3</li>
+              <li num  class="list-item">4</li>
+              <li num  class="list-item">5</li>
+              <li num  class="list-item">6</li>
+              <li num  class="list-item">7</li>
+              <li num  class="list-item">8</li>
+              <li num  class="list-item">9</li>
+              <li num  class="list-item">10</linum>
+            </ul>
+            <ul class="ul">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-columns"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm8.5 0v8H15V2zm0 9v3H15v-3zm-1-9H1v3h6.5zM1 14h6.5V6H1z"
+                />
+              </svg>
+            </ul>
+            <ul class="ul">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-graph-up-arrow"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </ul>
+            <h4 num>A</h4>
+            <ul class="ul">
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope-open"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2"
+                  />
+                </svg>
+              </li>
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chat-left-dots-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                  />
+                </svg>
+              </li>
+              <li class="list-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-basket"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="side-nav-container-names">
+            <ul class="ul">
+              Dashboard
+              <li  class="list-item">Demo1</li>
+              <li  class="list-item">Demo2</li>
+              <li  class="list-item">Demo3</li>
+              <li class="list-item">Demo4</li>
+              <li  class="list-item">Demo5</li>
+              <li  class="list-item">Demo6</li>
+              <li  class="list-item">Demo7</li>
+              <li  class="list-item">Demo8</li>
+              <li  class="list-item">Demo9</li>
+              <li class="list-item">Demo10</li>
+            </ul>
+            <ul class="ul">
+              Layout
+            </ul>
+            <ul class="ul">
+              Chanelog
+            </ul class="ul">
+            <h4>Application</h4>
+            <ul class="ul">
+              <li class="list-item">Email</li>
+              <li class="list-item">Chat</li>
+              <li class="list-item">eCommerce</li>
+            </ul>
+          </div>
+        </div>
+        <div class="main">
+            <div class="demo9-heading-container">
+                <h3>Demo5</h3>
+                <ul demo9>
+                    <li demo9><i  class="fa-solid fa-house deom91"></i> Dashboard</li>
+                    <li demo9><i  class="fa-regular fa-circle-dot deom91"></i> Demo9</li>
+                </ul>
+               
+
+            </div>
+            <div class="cont-container">
+              <div class="card card1  d-flex bg-white p-4 m-3">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="card-body px-25">
+                        <h1 class="banner-feature__heading color-dark">Hey Danial! Welcome to the Dashboard
+                        </h1>
+                        <p class="banner-feature__para color-dark">There are many variations of passages of
+                          Lorem Ipsum available,<br>
+                          ut the majority have suffered passages of Lorem Ipsum available alteration in
+                          some form
+                        </p>
+                        <div class="d-flex justify-content-sm-start justify-content-center">
+                            <button class="banner-feature__btn btn btn-primary color-white btn-md radius-xs fs-15" type="button">Learn More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="banner-feature__shape">
+                        <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701933198/demo5/aevrbiz3kymundo6vdkt.png" alt="img">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="graph-calender-container">
+                <div class="card card2  d-flex bg-white p-4 m-3">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-7">
+                        <h4>User Overview</h4>
+                      </div>
+                      <div class="col-5">
+                        <div>
+                          <button class="column2 todayBtn">Today</button>
+                          <button class="column3 weekBtn">Week</button>
+                          <button class="column4 monthBtn">Month</button>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                          <img card2BarGarph src="https://res.cloudinary.com/daoquetki/image/upload/v1701934669/demo5/jpoyee5isvjrf8v92h1l.png" alt="graph"/>
+                      </div>
+  
+                    </div>
+  
+                  </div>
+  
+                </div>
+                <div class="card card3  d-flex bg-white  m-3">
+
+                    <img card2Calender src="https://res.cloudinary.com/daoquetki/image/upload/v1701935723/demo5/pi8ha9xmpowmjsej9m2p.png" alt="calender"/>
+
+                </div>
+
+              </div>
+              <div class="member-upcoming-container">
+                <div class="card card4  d-flex bg-white  m-3 p-4">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Member Progress</h4>
+    
+                      </div>
+                      <div class="col-6 d-flex justify-content-end">
+                        <div >
+                          <button class="column2 todayBtn">Today</button>
+                          <button class="column3 weekBtn">Week</button>
+                          <button class="column4 monthBtn">Month</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">80%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-info" role="progressbar" style="width: 52%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">52%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-success" role="progressbar" style="width: 72%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">72%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-secondary" role="progressbar" style="width: 92%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">92%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-warning" role="progressbar" style="width: 29%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">29%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-secondary" role="progressbar" style="width: 92%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">92%</label>
+  
+                      </div>
+                    </div>
+    
+                  </div>
+  
+                </div>
+                <div class="card card5  d-flex bg-white  m-3 p-4">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Member Progress</h4>
+    
+                      </div>
+                      <div class="col-6 d-flex justify-content-end">
+                        <div >
+                          <button class="column2 todayBtn">Today</button>
+                          <button class="column3 weekBtn">Week</button>
+                          <button class="column4 monthBtn">Month</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">80%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-info" role="progressbar" style="width: 52%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">52%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-success" role="progressbar" style="width: 72%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">72%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-secondary" role="progressbar" style="width: 92%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">92%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-warning" role="progressbar" style="width: 29%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">29%</label>
+  
+                      </div>
+                    </div>
+                    <div class="row  mt-3">
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          <img src="https://res.cloudinary.com/daoquetki/image/upload/v1701943366/demo5/g4usb6eno5d4npf7ar0z.png" alt="rober"/>
+                          <h6 member>Robert</h6>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>$38,536</h6>
+                        </div>
+                      </div>
+                     
+                      <div class="col-3">
+                        <div class="memberProgress-img-content-container">
+                          
+                          <h6 member>ReactJs, HTML</h6>
+                        </div>
+                      </div>
+  
+                      <div class="col-2">
+                        <div class="">
+                            <lable class="progress-wrap mb-0" >
+                              <label class="progress mt-2" style="height: 3px;">
+                                <label class="progress-bar bg-secondary" role="progressbar" style="width: 92%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></label>
+                                
+                              </label>
+                              
+                            </lable>
+                            
+                           
+                          </div>
+                      </div>
+                      <div class="col-1">
+                        <label class="ratio-percentage ms-10">92%</label>
+  
+                      </div>
+                    </div>
+    
+                  </div>
+  
+                </div>
+
+              </div>
+              
+              
+              
+              
+              
+
+            </div>
+           
+
+        </div>
+
+       
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

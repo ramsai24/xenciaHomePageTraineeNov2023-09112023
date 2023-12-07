@@ -230,6 +230,8 @@ skillsTab.onclick = function () {
 };
 
 cancelCompany.onclick = function () {
+  generalTab.style.backgroundColor = "blue";
+  companyTab.style.backgroundColor = "red";
   //   btnColor();
   general.style.display = "block";
 
@@ -240,6 +242,8 @@ cancelCompany.onclick = function () {
 };
 
 cancelAddress.onclick = function () {
+  generalTab.style.backgroundColor = "blue";
+  addressTab.style.backgroundColor = "red";
   //   btnColor();
   general.style.display = "block";
 
@@ -250,6 +254,8 @@ cancelAddress.onclick = function () {
 };
 
 cancelAcademic.onclick = function () {
+  generalTab.style.backgroundColor = "blue";
+  academicTab.style.backgroundColor = "red";
   //   btnColor();
   general.style.display = "block";
 
@@ -260,6 +266,8 @@ cancelAcademic.onclick = function () {
 };
 
 cancelSkills.onclick = function () {
+  generalTab.style.backgroundColor = "blue";
+  skillsTab.style.backgroundColor = "red";
   //   btnColor();
   general.style.display = "block";
 
