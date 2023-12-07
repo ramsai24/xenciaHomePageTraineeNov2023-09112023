@@ -1,4 +1,6 @@
 // console.log("print");
+let sel = "#4bbfe5";
+let deSel = "#d41864";
 
 let generalTab = document.getElementById("nav-home-tab");
 let companyTab = document.getElementById("nav-profile-tab");
@@ -130,11 +132,11 @@ previousCompany.onclick = function () {
 };
 
 function genTab() {
-  generalTab.style.backgroundColor = "blue";
-  companyTab.style.backgroundColor = "red";
-  addressTab.style.backgroundColor = "red";
-  academicTab.style.backgroundColor = "red";
-  skillsTab.style.backgroundColor = "red";
+  generalTab.style.backgroundColor = sel;
+  companyTab.style.backgroundColor = deSel;
+  addressTab.style.backgroundColor = deSel;
+  academicTab.style.backgroundColor = deSel;
+  skillsTab.style.backgroundColor = deSel;
 }
 
 generalTab.onclick = function () {
@@ -150,11 +152,11 @@ generalTab.onclick = function () {
 };
 
 function compTab() {
-  generalTab.style.backgroundColor = "red";
-  companyTab.style.backgroundColor = "blue";
-  addressTab.style.backgroundColor = "red";
-  academicTab.style.backgroundColor = "red";
-  skillsTab.style.backgroundColor = "red";
+  generalTab.style.backgroundColor = deSel;
+  companyTab.style.backgroundColor = sel;
+  addressTab.style.backgroundColor = deSel;
+  academicTab.style.backgroundColor = deSel;
+  skillsTab.style.backgroundColor = deSel;
 }
 
 companyTab.onclick = function () {
@@ -170,11 +172,11 @@ companyTab.onclick = function () {
 };
 
 function addTab() {
-  generalTab.style.backgroundColor = "red";
-  companyTab.style.backgroundColor = "red";
-  addressTab.style.backgroundColor = "blue";
-  academicTab.style.backgroundColor = "red";
-  skillsTab.style.backgroundColor = "red";
+  generalTab.style.backgroundColor = deSel;
+  companyTab.style.backgroundColor = deSel;
+  addressTab.style.backgroundColor = sel;
+  academicTab.style.backgroundColor = deSel;
+  skillsTab.style.backgroundColor = deSel;
 }
 
 addressTab.onclick = function () {
@@ -190,11 +192,11 @@ addressTab.onclick = function () {
 };
 
 function acadTab() {
-  generalTab.style.backgroundColor = "red";
-  companyTab.style.backgroundColor = "red";
-  addressTab.style.backgroundColor = "red";
-  academicTab.style.backgroundColor = "blue";
-  skillsTab.style.backgroundColor = "red";
+  generalTab.style.backgroundColor = deSel;
+  companyTab.style.backgroundColor = deSel;
+  addressTab.style.backgroundColor = deSel;
+  academicTab.style.backgroundColor = sel;
+  skillsTab.style.backgroundColor = deSel;
 }
 
 academicTab.onclick = function () {
@@ -210,11 +212,11 @@ academicTab.onclick = function () {
 };
 
 function skillTab() {
-  generalTab.style.backgroundColor = "red";
-  companyTab.style.backgroundColor = "red";
-  addressTab.style.backgroundColor = "red";
-  academicTab.style.backgroundColor = "red";
-  skillsTab.style.backgroundColor = "blue";
+  generalTab.style.backgroundColor = deSel;
+  companyTab.style.backgroundColor = deSel;
+  addressTab.style.backgroundColor = deSel;
+  academicTab.style.backgroundColor = deSel;
+  skillsTab.style.backgroundColor = sel;
 }
 
 skillsTab.onclick = function () {
@@ -230,8 +232,8 @@ skillsTab.onclick = function () {
 };
 
 cancelCompany.onclick = function () {
-  generalTab.style.backgroundColor = "blue";
-  companyTab.style.backgroundColor = "red";
+  generalTab.style.backgroundColor = sel;
+  companyTab.style.backgroundColor = deSel;
   //   btnColor();
   general.style.display = "block";
 
@@ -242,8 +244,8 @@ cancelCompany.onclick = function () {
 };
 
 cancelAddress.onclick = function () {
-  generalTab.style.backgroundColor = "blue";
-  addressTab.style.backgroundColor = "red";
+  generalTab.style.backgroundColor = sel;
+  addressTab.style.backgroundColor = deSel;
   //   btnColor();
   general.style.display = "block";
 
@@ -254,8 +256,8 @@ cancelAddress.onclick = function () {
 };
 
 cancelAcademic.onclick = function () {
-  generalTab.style.backgroundColor = "blue";
-  academicTab.style.backgroundColor = "red";
+  generalTab.style.backgroundColor = sel;
+  academicTab.style.backgroundColor = deSel;
   //   btnColor();
   general.style.display = "block";
 
@@ -266,8 +268,8 @@ cancelAcademic.onclick = function () {
 };
 
 cancelSkills.onclick = function () {
-  generalTab.style.backgroundColor = "blue";
-  skillsTab.style.backgroundColor = "red";
+  generalTab.style.backgroundColor = sel;
+  skillsTab.style.backgroundColor = deSel;
   //   btnColor();
   general.style.display = "block";
 
@@ -301,42 +303,42 @@ console.log(
 
 // function btnColor() {
 //   if (tab1.textContent.toLowerCase() === generalTab.textContent.toLowerCase()) {
-//     generalTab.style.backgroundColor = "blue";
-//     companyTab.style.backgroundColor = "red";
-//     addressTab.style.backgroundColor = "red";
-//     academicTab.style.backgroundColor = "red";
-//     skillsTab.style.backgroundColor = "red";
+//     generalTab.style.backgroundColor = sel;
+//     companyTab.style.backgroundColor = deSel;
+//     addressTab.style.backgroundColor = deSel;
+//     academicTab.style.backgroundColor = deSel;
+//     skillsTab.style.backgroundColor = deSel;
 //   } else if (
 //     tab2.textContent.toLowerCase() === companyTab.textContent.toLowerCase()
 //   ) {
-//     generalTab.style.backgroundColor = "red";
-//     companyTab.style.backgroundColor = "blue";
-//     addressTab.style.backgroundColor = "red";
-//     academicTab.style.backgroundColor = "red";
-//     skillsTab.style.backgroundColor = "red";
+//     generalTab.style.backgroundColor = deSel;
+//     companyTab.style.backgroundColor = sel;
+//     addressTab.style.backgroundColor = deSel;
+//     academicTab.style.backgroundColor = deSel;
+//     skillsTab.style.backgroundColor = deSel;
 //   } else if (
 //     tab3.textContent.toLowerCase() === addressTab.textContent.toLowerCase()
 //   ) {
-//     generalTab.style.backgroundColor = "red";
-//     companyTab.style.backgroundColor = "red";
-//     addressTab.style.backgroundColor = "blue";
-//     academicTab.style.backgroundColor = "red";
-//     skillsTab.style.backgroundColor = "red";
+//     generalTab.style.backgroundColor = deSel;
+//     companyTab.style.backgroundColor = deSel;
+//     addressTab.style.backgroundColor = sel;
+//     academicTab.style.backgroundColor = deSel;
+//     skillsTab.style.backgroundColor = deSel;
 //   } else if (
 //     tab4.textContent.toLowerCase() === academicTab.textContent.toLowerCase()
 //   ) {
-//     generalTab.style.backgroundColor = "red";
-//     companyTab.style.backgroundColor = "red";
-//     addressTab.style.backgroundColor = "red";
-//     academicTab.style.backgroundColor = "blue";
-//     skillsTab.style.backgroundColor = "red";
+//     generalTab.style.backgroundColor = deSel;
+//     companyTab.style.backgroundColor = deSel;
+//     addressTab.style.backgroundColor = deSel;
+//     academicTab.style.backgroundColor = sel;
+//     skillsTab.style.backgroundColor = deSel;
 //   } else if (
 //     tab5.textContent.toLowerCase() === skillsTab.textContent.toLowerCase()
 //   ) {
-//     generalTab.style.backgroundColor = "red";
-//     companyTab.style.backgroundColor = "red";
-//     addressTab.style.backgroundColor = "red";
-//     academicTab.style.backgroundColor = "red";
-//     skillsTab.style.backgroundColor = "blue";
+//     generalTab.style.backgroundColor = deSel;
+//     companyTab.style.backgroundColor = deSel;
+//     addressTab.style.backgroundColor = deSel;
+//     academicTab.style.backgroundColor = deSel;
+//     skillsTab.style.backgroundColor = sel;
 //   }
 // }

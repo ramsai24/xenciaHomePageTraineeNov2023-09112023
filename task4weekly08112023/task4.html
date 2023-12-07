@@ -14,214 +14,311 @@
   </head>
   <body>
     <div class="bg-container">
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab">General</button>
-          <button class="nav-link" id="nav-profile-tab">Company</button>
-          <button class="nav-link" id="nav-contact-tab">Address</button>
-          <button class="nav-link" id="nav-academic-tab">Academic</button>
-          <button class="nav-link" id="nav-skills-tab">Skills</button>
-        </div>
-      </nav>
-      <div class="tab-content content-container" id="nav-tabContent">
-        <div id="empty"></div>
-        <div
-          class="tab-pane fade show active general-container"
-          id="nav-home"
-          role="tabpanel"
-          aria-labelledby="nav-home-tab"
-        >
-          <div>
-            <h1 id="tab1">General</h1>
-            <div>
-              <div input>
-                <label inputEl for="name">Name</label>
-                <input inputEl id="name" type="text" />
+      <div class="form">
+        <nav>
+          <div class="nav nav-tabs tabs-container" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab">General</button>
+            <button class="nav-link" id="nav-profile-tab">Company</button>
+            <button class="nav-link" id="nav-contact-tab">Address</button>
+            <button class="nav-link" id="nav-academic-tab">Academic</button>
+            <button class="nav-link" id="nav-skills-tab">Skills</button>
+          </div>
+        </nav>
+        <div class="tab-content content-container" id="nav-tabContent">
+          <div id="empty"></div>
+          <div
+            class="tab-pane fade show active general-container"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <div class="form-container">
+              <h1 id="tab1">General</h1>
+              <div class="fill-form-containers">
+                <div input>
+                  <label inputEl for="name">Name : </label>
+                  <input
+                    inputEl
+                    id="name"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="id">ID : </label>
+                  <input
+                    inputEl
+                    id="id"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="Department">Department : </label>
+                  <input
+                    inputEl
+                    id="Department"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="Company">Company : </label>
+                  <input
+                    inputEl
+                    id="Company"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
               </div>
-              <div input>
-                <label inputEl for="id">ID</label>
-                <input inputEl id="id" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Department">Department</label>
-                <input inputEl id="Department" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Company">Company</label>
-                <input inputEl id="Company" type="text" />
-              </div>
-            </div>
-            <div class="button-container">
-              <div>
-                <button>1</button>
-                <!-- <div class="nav nav-tabs" id="nav-tabs" role="tablist">
-                  <button
-                    class="nav-link"
-                    id="nav-company-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-profile"
-                    aria-selected="false"
-                  >
-                    Company
-                  </button>
-                </div> -->
+              <div class="button-container">
+                <div>
+                  <button class="pagination">1</button>
+                  <!-- <div class="nav nav-tabs" id="nav-tabs" role="tablist">
+                    <button
+                      class="nav-link"
+                      id="nav-company-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                    >
+                      Company
+                    </button>
+                  </div> -->
 
-                <button id="nextGeneral">Next</button>
+                  <button id="nextGeneral" class="next-btn">Next</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="tab-pane fade company-container"
-          id="nav-profile"
-          role="tabpanel"
-          aria-labelledby="nav-profile-tab"
-        >
-          <div>
-            <h1 id="tab2">Company</h1>
-            <div>
-              <div input>
-                <label inputEl for="name">Name</label>
-                <input inputEl id="name" type="text" />
+          <div
+            class="tab-pane fade company-container"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+            <div class="form-container">
+              <h1 id="tab2">Company</h1>
+              <div class="fill-form-containers">
+                <div input>
+                  <label inputEl for="name">Company Name : </label>
+                  <input
+                    inputEl
+                    id="name"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="id">Employee ID : </label>
+                  <input
+                    inputEl
+                    id="id"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="Department">Designation : </label>
+                  <input
+                    inputEl
+                    id="Department"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="Company">Mail-ID : </label>
+                  <input
+                    inputEl
+                    id="Company"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
               </div>
-              <div input>
-                <label inputEl for="id">ID</label>
-                <input inputEl id="id" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Department">Department</label>
-                <input inputEl id="Department" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Company">Company</label>
-                <input inputEl id="Company" type="text" />
-              </div>
-            </div>
-            <div class="button-container">
-              <div>
-                <button id="cancelCompany">Cancel</button>
-              </div>
-              <div>
-                <button id="previousCompany">Previous</button>
-                <button>2</button>
-                <button id="nextCompany">Next</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tab-pane fade address-container"
-          id="nav-contact"
-          role="tabpanel"
-          aria-labelledby="nav-contact-tab"
-        >
-          <div>
-            <h1 id="tab3">Address</h1>
-            <div>
-              <div input>
-                <label inputEl for="name">Name</label>
-                <input inputEl id="name" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="id">ID</label>
-                <input inputEl id="id" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Department">Department</label>
-                <input inputEl id="Department" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Company">Company</label>
-                <input inputEl id="Company" type="text" />
-              </div>
-            </div>
-            <div class="button-container">
-              <div>
-                <button id="cancelAddress">Cancel</button>
-              </div>
-              <div>
-                <button id="previousAddress">Previous</button>
-                <button>3</button>
-                <button id="nextAddress">Next</button>
+              <div class="button-container">
+                <button id="cancelCompany" class="cancel-btn">Cancel</button>
+
+                <div>
+                  <button id="previousCompany" class="previous-btn">
+                    Previous
+                  </button>
+                  <button class="pagination">2</button>
+                  <button id="nextCompany" class="next-btn">Next</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="tab-pane fade academic-container"
-          id="nav-academic"
-          role="tabpanel"
-          aria-labelledby="nav-academic-tab"
-        >
-          <div>
-            <h1 id="tab4">Academic</h1>
-            <div>
-              <div input>
-                <label inputEl for="name">Name</label>
-                <input inputEl id="name" type="text" />
+          <div
+            class="tab-pane fade address-container"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            <div class="form-container">
+              <h1 id="tab3">Address</h1>
+              <div class="fill-form-containers">
+                <div input>
+                  <label inputEl for="name">D.NO : </label>
+                  <input
+                    inputEl
+                    id="name"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="id">Street Name : </label>
+                  <input
+                    inputEl
+                    id="id"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="Department">City & STATE : </label>
+                  <input
+                    inputEl
+                    id="Department"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="Company">PIN Code : </label>
+                  <input
+                    inputEl
+                    id="Company"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
               </div>
-              <div input>
-                <label inputEl for="id">ID</label>
-                <input inputEl id="id" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Department">Department</label>
-                <input inputEl id="Department" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Company">Company</label>
-                <input inputEl id="Company" type="text" />
-              </div>
-            </div>
-            <div class="button-container">
-              <div>
-                <button id="cancelAcademic">Cancel</button>
-              </div>
-              <div>
-                <button id="previousAcademic">Previous</button>
-                <button>4</button>
-                <button id="nextAcademic">Next</button>
+              <div class="button-container">
+                <button id="cancelAddress" class="cancel-btn">Cancel</button>
+
+                <div>
+                  <button id="previousAddress" class="previous-btn">
+                    Previous
+                  </button>
+                  <button class="pagination">3</button>
+                  <button id="nextAddress" class="next-btn">Next</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="tab-pane fade skill-container"
-          id="nav-skills"
-          role="tabpanel"
-          aria-labelledby="nav-skills-tab"
-        >
-          <div>
-            <h1 id="tab5">Skills</h1>
-            <div>
-              <div input>
-                <label inputEl for="name">Name</label>
-                <input inputEl id="name" type="text" />
+          <div
+            class="tab-pane fade academic-container"
+            id="nav-academic"
+            role="tabpanel"
+            aria-labelledby="nav-academic-tab"
+          >
+            <div class="form-container">
+              <h1 id="tab4">Academic</h1>
+              <div class="fill-form-containers">
+                <div input>
+                  <label inputEl for="name">Collage Name : </label>
+                  <input
+                    inputEl
+                    id="name"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="id">Collage Address : </label>
+                  <input
+                    inputEl
+                    id="id"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="Department">Department : </label>
+                  <input
+                    inputEl
+                    id="Department"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="Company">Location : </label>
+                  <input
+                    inputEl
+                    id="Company"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
               </div>
-              <div input>
-                <label inputEl for="id">ID</label>
-                <input inputEl id="id" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Department">Department</label>
-                <input inputEl id="Department" type="text" />
-              </div>
-              <div input>
-                <label inputEl for="Company">Company</label>
-                <input inputEl id="Company" type="text" />
+              <div class="button-container">
+                <button id="cancelAcademic" class="cancel-btn">Cancel</button>
+
+                <div>
+                  <button id="previousAcademic" class="previous-btn">
+                    Previous
+                  </button>
+                  <button class="pagination">4</button>
+                  <button id="nextAcademic" class="next-btn">Next</button>
+                </div>
               </div>
             </div>
-            <div class="button-container">
-              <div>
-                <button>Submit</button>
-                <button id="cancelSkills">Cancel</button>
+          </div>
+          <div
+            class="tab-pane fade skill-container"
+            id="nav-skills"
+            role="tabpanel"
+            aria-labelledby="nav-skills-tab"
+          >
+            <div class="form-container">
+              <h1 id="tab5">Skills</h1>
+              <div class="fill-form-containers">
+                <div input>
+                  <label inputEl for="name">Known Technologies : </label>
+                  <input
+                    inputEl
+                    id="name"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <div input>
+                  <label inputEl for="id">Certifications : </label>
+                  <input
+                    inputEl
+                    id="id"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                </div>
+                <!-- <div input>
+                  <label inputEl for="Department">Department : </label>
+                  <input inputEl id="Department" type="text" />
+                </div>
+                <div input>
+                  <label inputEl for="Company">Company : </label>
+                  <input inputEl id="Company" type="text" />
+                </div> -->
               </div>
-              <div>
-                <button id="previousSkills">Previous</button>
-                <button>5</button>
+              <div class="button-container">
+                <div>
+                  <button class="submit-btn">Submit</button>
+                  <button id="cancelSkills" class="cancel-btn">Cancel</button>
+                </div>
+                <div>
+                  <button id="previousSkills" class="previous-btn">
+                    Previous
+                  </button>
+                  <button class="pagination">5</button>
+                </div>
               </div>
             </div>
           </div>
