@@ -154,6 +154,11 @@ div[ab]:hover ul {
   }
 }
 
+.side-nav-applicaton-head {
+  position: relative;
+  right: 20px;
+}
+
 .ul {
   list-style-type: none;
   /* border: 1px solid yellow; */

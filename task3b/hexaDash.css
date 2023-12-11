@@ -143,6 +143,11 @@ div[ab]:hover ul {
   }
 }
 
+.side-nav-applicaton-head {
+  position: relative;
+  right: 20px;
+}
+
 .side-nav-container-icons {
 }
 
