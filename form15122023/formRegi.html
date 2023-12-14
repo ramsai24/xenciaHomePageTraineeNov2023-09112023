@@ -44,7 +44,9 @@
 
             <div class="hover-container">
               <div>
-                <span block>Sign In</span>
+                <a link id="link" href="formLogin.html">
+                  <span block>Sign In</span>
+                </a>
               </div>
             </div>
           </div>
@@ -64,7 +66,7 @@
         <div class="tab-content content-container" id="nav-tabContent">
           <div id="empty"></div>
           <div
-            class="tab-pane fade show active general-container"
+            class="tab-pane fade show active"
             id="nav-home"
             role="tabpanel"
             aria-labelledby="nav-home-tab"
@@ -80,6 +82,7 @@
                     type="text"
                     placeholder="Type here....."
                   />
+                  <p span id="nameSpanEl"></p>
                 </div>
 
                 <div input>
@@ -87,9 +90,10 @@
                   <input
                     inputEl
                     id="phone"
-                    type="text"
+                    type="number"
                     placeholder="Type here....."
                   />
+                  <p span id="phoneSpanEl"></p>
                 </div>
 
                 <div input>
@@ -100,6 +104,7 @@
                     type="text"
                     placeholder="Type here....."
                   />
+                  <p span id="addressSpanEl"></p>
                 </div>
                 <div input>
                   <label inputEl for="area">Area : </label>
@@ -109,6 +114,7 @@
                     type="text"
                     placeholder="Type here....."
                   />
+                  <p span id="areaSpanEl"></p>
                 </div>
                 <div input>
                   <label inputEl for="organization">Organization : </label>
@@ -118,6 +124,17 @@
                     type="text"
                     placeholder="Type here....."
                   />
+                  <p span id="organizationSpanEl"></p>
+                </div>
+                <div input>
+                  <label inputEl for="department">Department : </label>
+                  <input
+                    inputEl
+                    id="department"
+                    type="text"
+                    placeholder="Type here....."
+                  />
+                  <p span id="departmentSpanEl"></p>
                 </div>
                 <div input>
                   <label inputEl for="email">Email : </label>
@@ -127,6 +144,7 @@
                     type="text"
                     placeholder="Type here....."
                   />
+                  <p span id="emailSpanEl"></p>
                 </div>
                 <div input>
                   <label inputEl for="password">Password : </label>
@@ -136,10 +154,11 @@
                     type="password"
                     placeholder="Type here....."
                   />
+                  <p span id="passwordSpanEl"></p>
                 </div>
                 <div input>
                   <label inputEl for="passwordConform"
-                    >Confrom Password :
+                    >Confirm Password :
                   </label>
                   <input
                     inputEl
@@ -147,23 +166,26 @@
                     type="password"
                     placeholder="Type here....."
                   />
+                  <p span id="passwordConfirmSpanEl"></p>
                 </div>
               </div>
               <div class="button-container">
                 <div>
                   <button id="register" class="next-btn">Register</button>
+                  <p span id="error"></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="dataReceived"></div>
     </div>
     <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script> -->
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="registration.js"></script>
   </body>
 </html>

@@ -17,7 +17,7 @@ loginBtn.onclick = function login(event) {
     loginBtn.appendChild(anchorRegister);
     status.textContent = "Login Success";
     console.log(event.view.window.location.pathname);
-    event.view.window.location.pathname = "/form15122023/form.html";
+    event.view.window.location.pathname = "/form15122023/afterLogin.html";
   } else {
     status.textContent = "Invalid Credentials";
   }

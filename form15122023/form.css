@@ -1,11 +1,13 @@
 .bg-container {
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
-  background-size: cover;
+  min-height: 100vh;
+
   background-color: #d41864;
+  padding: 18px;
 }
 
 .xencia-header-container {
@@ -18,7 +20,7 @@
 
 img[logo] {
   width: 150px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .profile-name-and-icon-container {
@@ -26,14 +28,14 @@ img[logo] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #4bbfe5;
+  /* border: 2px solid #4bbfe5; */
 }
 
 .profile-icon-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 .profile-img-hover {
@@ -51,12 +53,31 @@ img[logo] {
 
 .profile-icon-container:hover .hover-container {
   visibility: visible;
-  border: 10px solid slateblue;
+  border: 1px solid slateblue;
+  padding: 12px;
+  border-radius: 12px;
+  border-top-right-radius: none;
+  width: 80px;
+  text-align: center;
+}
+
+a[link] {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+a[linkLogin] {
+  justify-self: flex-end;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  /* border: 1px solid red; */
 }
 
 .form {
   border: 1px solid black;
-  width: 100%;
+
   background-color: #4bbfe5;
   padding: 18px;
   border-radius: 8px;
@@ -101,7 +122,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .button-container {
@@ -216,4 +237,34 @@ input[inputEl] {
 
 .fill-form-containers {
   text-align: center;
+}
+
+p[span] {
+  color: red;
+  font-size: 10px;
+  /* border: 1px solid blue; */
+}
+
+table {
+  /* border: 2px solid red; */
+  background-color: #4bbfe5;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+th {
+  width: 200px;
+  border: 1px solid salmon;
+  padding: 12px;
+  color: black;
+}
+
+td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 12px;
+}
+
+.general-container {
+  margin-top: 150px;
 }
