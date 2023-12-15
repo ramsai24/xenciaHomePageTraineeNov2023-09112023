@@ -147,6 +147,12 @@ div[input] {
   /* border: 2px solid magenta; */
   margin-top: 14px;
   margin-bottom: 14px;
+  font-weight: 600;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
 }
 
 label[inputEl] {
@@ -241,8 +247,22 @@ input[inputEl] {
 
 p[span] {
   color: red;
-  font-size: 10px;
-  /* border: 1px solid blue; */
+  font-size: 12px;
+  /* border: 12x solid blue; */
+  /* display: inline-block; */
+  width: 150px;
+  /* position: absolute;
+  left:300px; */
+  position: relative;
+  text-align: left;
+  left: 350px;
+}
+
+p[error] {
+  color: red;
+  font-weight: 600;
+  position: relative;
+  left: 20px;
 }
 
 table {

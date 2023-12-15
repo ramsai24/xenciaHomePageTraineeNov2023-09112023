@@ -66,10 +66,26 @@ phone.addEventListener("keydown", function (event) {
   }
 });
 
+phone.addEventListener("blur", function (event) {
+  if (event.target.value.length === 0) {
+    phoneSpanEl.textContent = "Enter Phone Number";
+  } else {
+    phoneSpanEl.textContent = "";
+  }
+});
+
 address.addEventListener("keydown", function (event) {
   if (event.target.value.length >= 250) {
     // console.log(event.target.value);
     address.value = event.target.value.slice(0, 250);
+  }
+});
+
+address.addEventListener("blur", function (event) {
+  if (event.target.value.length === 0) {
+    addressSpanEl.textContent = "Enter Address";
+  } else {
+    addressSpanEl.textContent = "";
   }
 });
 
@@ -80,6 +96,14 @@ area.addEventListener("keydown", function (event) {
   }
 });
 
+area.addEventListener("blur", function (event) {
+  if (event.target.value.length === 0) {
+    areaSpanEl.textContent = "Enter Area";
+  } else {
+    areaSpanEl.textContent = "";
+  }
+});
+
 organization.addEventListener("keydown", function (event) {
   if (event.target.value.length >= 50) {
     // console.log(event.target.value);
@@ -87,13 +111,27 @@ organization.addEventListener("keydown", function (event) {
   }
 });
 
-department.addEventListener("keydown", function (event) {
-  console.log(department.value.length);
-  if (event.target.value.length >= 50) {
-    // console.log(event.target.value);
+organization.addEventListener("blur", function (event) {
+  if (event.target.value.length === 0) {
+    organizationSpanEl.textContent = "Enter Organization";
+  } else {
+    organizationSpanEl.textContent = "";
+  }
+});
 
-    department.value = event.target.value.slice(0, 50);
-    // console.log(department.value.length);
+department.addEventListener("keydown", function (event) {
+  if (event.target.value.length === 0) {
+    departmentSpanEl.textContent = "Enter Name";
+  } else {
+    departmentSpanEl.textContent = "";
+  }
+});
+
+department.addEventListener("blur", function (event) {
+  if (event.target.value.length === 0) {
+    departmentSpanEl.textContent = "Enter Department";
+  } else {
+    departmentSpanEl.textContent = "";
   }
 });
 
@@ -108,6 +146,30 @@ email.addEventListener("change", function (event) {
     emailSpanEl.textContent = "";
   } else {
     emailSpanEl.textContent = "Invalid Email";
+  }
+});
+
+email.addEventListener("blur", function (event) {
+  if (event.target.value.length === 0) {
+    emailSpanEl.textContent = "Enter Name";
+  } else {
+    emailSpanEl.textContent = "";
+  }
+});
+
+passwordSpanEl.addEventListener("blur", function (event) {
+  if (event.target.value.length === 0) {
+    emailSpanEl.textContent = "Enter Password";
+  } else {
+    emailSpanEl.textContent = "";
+  }
+});
+
+passwordSpanEl.addEventListener("blur", function (event) {
+  if (event.target.value.length === 0) {
+    emailSpanEl.textContent = "Enter Confirm Password";
+  } else {
+    emailSpanEl.textContent = "";
   }
 });
 
