@@ -11,7 +11,7 @@ loginBtn.onclick = function login(event) {
   emailInput = email.value;
   passwordInput = password.value;
 
-  if (emailInput === "a") {
+  if (emailInput === "admin" && passwordInput === "admin@12") {
     let anchorRegister = document.createElement("a");
     anchorRegister.setAttribute("href", "form.html");
     loginBtn.appendChild(anchorRegister);

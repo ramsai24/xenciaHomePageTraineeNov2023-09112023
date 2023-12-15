@@ -22,13 +22,28 @@ img[logo] {
   width: 150px;
   /* border: 1px solid red; */
 }
+.home {
+  position: relative;
+  top: 200px;
+}
+.loginHereBtn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+}
 
 .profile-name-and-icon-container {
-  width: 50%;
+  /* width: 12%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* border: 2px solid #4bbfe5; */
+}
+
+.xen-heading {
+  font-family: sans-serif;
 }
 
 .profile-icon-container {
@@ -44,8 +59,12 @@ img[logo] {
 
 .hover-container {
   position: absolute;
-  top: 32px;
-  right: 12px;
+  /* top: 52px;
+ 
+  right: 3px; */
+  top: 54px;
+  right: 1px;
+
   visibility: hidden;
   flex-direction: column;
   background-color: aliceblue;
@@ -73,6 +92,7 @@ a[linkLogin] {
   color: black;
   font-weight: 600;
   /* border: 1px solid red; */
+  margin-left: 12px;
 }
 
 .form {
@@ -270,21 +290,32 @@ table {
   background-color: #4bbfe5;
   color: #ffffff;
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 th {
   width: 200px;
-  border: 1px solid salmon;
+  border: 1px solid black;
   padding: 12px;
   color: black;
+  border-radius: 8px;
 }
 
 td {
   text-align: center;
   border: 1px solid black;
   padding: 12px;
+  border-radius: 8px;
 }
 
 .general-container {
   margin-top: 150px;
+}
+
+span[nav],
+a[nav] {
+  background-color: #4bbfe5;
+  border-radius: 6px;
+  padding: 7px;
+  color: #fff;
 }

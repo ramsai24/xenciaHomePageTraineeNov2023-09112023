@@ -120,10 +120,9 @@ organization.addEventListener("blur", function (event) {
 });
 
 department.addEventListener("keydown", function (event) {
-  if (event.target.value.length === 0) {
-    departmentSpanEl.textContent = "Enter Name";
-  } else {
-    departmentSpanEl.textContent = "";
+  if (event.target.value.length >= 50) {
+    // console.log(event.target.value);
+    department.value = event.target.value.slice(0, 50);
   }
 });
 
@@ -151,25 +150,25 @@ email.addEventListener("change", function (event) {
 
 email.addEventListener("blur", function (event) {
   if (event.target.value.length === 0) {
-    emailSpanEl.textContent = "Enter Name";
+    emailSpanEl.textContent = "Enter Email";
   } else {
     emailSpanEl.textContent = "";
   }
 });
 
-passwordSpanEl.addEventListener("blur", function (event) {
+password.addEventListener("blur", function (event) {
   if (event.target.value.length === 0) {
-    emailSpanEl.textContent = "Enter Password";
+    passwordSpanEl.textContent = "Enter Password";
   } else {
-    emailSpanEl.textContent = "";
+    passwordSpanEl.textContent = "";
   }
 });
 
-passwordSpanEl.addEventListener("blur", function (event) {
+passwordConform.addEventListener("blur", function (event) {
   if (event.target.value.length === 0) {
-    emailSpanEl.textContent = "Enter Confirm Password";
+    passwordConfirmSpanEl.textContent = "Enter Confirm Password";
   } else {
-    emailSpanEl.textContent = "";
+    passwordConfirmSpanEl.textContent = "";
   }
 });
 
