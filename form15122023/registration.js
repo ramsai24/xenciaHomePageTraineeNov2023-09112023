@@ -325,5 +325,5 @@ registerBtn.onclick = function lg(event) {
     }
   }
 
-  console.log(event);
+  // console.log(event);
 };

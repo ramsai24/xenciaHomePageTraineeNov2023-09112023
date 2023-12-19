@@ -34,6 +34,13 @@ img[logo] {
   font-size: 20px;
 }
 
+.loginHereBtn:hover {
+  background-color: #d41864;
+  border-radius: 6px;
+  color: sandybrown;
+  font-size: 18px;
+}
+
 .profile-name-and-icon-container {
   /* width: 12%; */
   display: flex;
