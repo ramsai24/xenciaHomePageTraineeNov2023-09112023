@@ -1,6 +1,9 @@
 let inputEl = document.querySelector("div #valueInput");
 console.log(inputEl.value);
 
+let cummulativeEl = document.querySelector("div #cummulative");
+console.log(inputEl.value);
+
 let labelEl = document.querySelector("div label");
 let plus = document.querySelector("#plus");
 let minus = document.querySelector("#minus");
@@ -14,82 +17,132 @@ let back = document.querySelector("#back");
 
 let one = document.querySelector(".one");
 one.addEventListener("click", function () {
-  let inputValue = inputEl.value + "1";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "1";
+  } else {
+    let inputValue = inputEl.value + "1";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let two = document.querySelector(".two");
 two.addEventListener("click", function () {
-  let inputValue = inputEl.value + "2";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "2";
+  } else {
+    let inputValue = inputEl.value + "2";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let three = document.querySelector(".three");
 three.addEventListener("click", function () {
-  let inputValue = inputEl.value + "3";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "3";
+  } else {
+    let inputValue = inputEl.value + "3";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let four = document.querySelector(".four");
 four.addEventListener("click", function () {
-  let inputValue = inputEl.value + "4";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "4";
+  } else {
+    let inputValue = inputEl.value + "4";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let five = document.querySelector(".five");
 five.addEventListener("click", function () {
-  let inputValue = inputEl.value + "5";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "5";
+  } else {
+    let inputValue = inputEl.value + "5";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let six = document.querySelector(".six");
 six.addEventListener("click", function () {
-  let inputValue = inputEl.value + "6";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "6";
+  } else {
+    let inputValue = inputEl.value + "6";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let seven = document.querySelector(".seven");
 seven.addEventListener("click", function () {
-  let inputValue = inputEl.value + "7";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "7";
+  } else {
+    let inputValue = inputEl.value + "7";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let eight = document.querySelector(".eight");
 eight.addEventListener("click", function () {
-  let inputValue = inputEl.value + "8";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "8";
+  } else {
+    let inputValue = inputEl.value + "8";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let nine = document.querySelector(".nine");
 nine.addEventListener("click", function () {
-  let inputValue = inputEl.value + "9";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "9";
+  } else {
+    let inputValue = inputEl.value + "9";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 let zero = document.querySelector(".zero");
 zero.addEventListener("click", function () {
-  let inputValue = inputEl.value + "0";
-  inputEl.value = inputValue;
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    inputEl.value = "0";
+  } else {
+    let inputValue = inputEl.value + "0";
+    inputEl.value = inputValue;
 
-  console.log(inputValue);
+    console.log(inputValue);
+  }
 });
 
 var inputValue;
@@ -109,27 +162,67 @@ inputEl.addEventListener("keydown", function (event) {
 // console.log(inputValue);
 
 plus.addEventListener("click", function (event) {
-  inputValue = inputEl.value;
-  console.log(inputValue);
-  inputEl.value = inputValue + "+";
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    let cummValue = cummulativeEl.value.split(" = ");
+    console.log(cummValue);
+    console.log(cummValue.length);
+
+    console.log(cummValue[cummValue.length - 1]);
+    inputEl.value = parseInt(cummValue[cummValue.length - 1]);
+  } else {
+    inputValue = inputEl.value;
+    console.log(inputValue);
+    inputEl.value = inputValue + "+";
+  }
 });
 
 minus.addEventListener("click", function (event) {
-  inputValue = inputEl.value;
-  console.log(inputValue);
-  inputEl.value = inputValue + "-";
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    let cummValue = cummulativeEl.value.split(" = ");
+    console.log(cummValue);
+    console.log(cummValue.length);
+
+    console.log(cummValue[cummValue.length - 1]);
+    inputEl.value = parseInt(cummValue[cummValue.length - 1]);
+  } else {
+    inputValue = inputEl.value;
+    console.log(inputValue);
+    inputEl.value = inputValue + "-";
+  }
 });
 
 multiple.addEventListener("click", function (event) {
-  inputValue = inputEl.value;
-  console.log(inputValue);
-  inputEl.value = inputValue + "*";
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    let cummValue = cummulativeEl.value.split(" = ");
+    console.log(cummValue);
+    console.log(cummValue.length);
+
+    console.log(cummValue[cummValue.length - 1]);
+    inputEl.value = parseInt(cummValue[cummValue.length - 1]);
+  } else {
+    inputValue = inputEl.value;
+    console.log(inputValue);
+    inputEl.value = inputValue + "*";
+  }
 });
 
 division.addEventListener("click", function (event) {
-  inputValue = inputEl.value;
-  console.log(inputValue);
-  inputEl.value = inputValue + "/";
+  if (inputEl.value.includes(" = ")) {
+    cummulativeEl.value = inputEl.value;
+    let cummValue = cummulativeEl.value.split(" = ");
+    console.log(cummValue);
+    console.log(cummValue.length);
+
+    console.log(cummValue[cummValue.length - 1]);
+    inputEl.value = parseInt(cummValue[cummValue.length - 1]);
+  } else {
+    inputValue = inputEl.value;
+    console.log(inputValue);
+    inputEl.value = inputValue + "/";
+  }
 });
 
 // modulus.addEventListener("click", function (event) {
@@ -239,6 +332,7 @@ equalTo.addEventListener("click", function () {
 
 clear.addEventListener("click", function () {
   inputEl.value = "";
+  cummulativeEl.value = "";
 });
 
 back.addEventListener("click", function () {
