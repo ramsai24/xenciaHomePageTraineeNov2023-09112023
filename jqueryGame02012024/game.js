@@ -68,7 +68,6 @@ $("#yellow").on("click", function () {
 
 // console.log(randomColor);
 // console.log(countArray);
-let interval;
 let count = 0;
 $(document).ready(function () {
   $("h1").on("click", function () {
@@ -95,8 +94,10 @@ $(document).ready(function () {
       //     $(`#${ra[0]}`).addClass("opa");
       //   }, 1000);
       //   }
-    }, 2000);
-    $(`#${ra[0]}`).removeClass("opa");
+      setTimeout(function () {
+        $(`#${ra[0]}`).removeClass("opa");
+      }, 1000);
+    }, 3000);
 
     // console.log(randomColor);
     // console.log(countArray);
