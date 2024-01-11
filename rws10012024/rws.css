@@ -197,7 +197,8 @@ button {
 
 /* others */
 
-p[span] {
+p[span],
+td[span] {
   color: red;
   font-size: 12px;
   /* border: 12x solid blue; */
@@ -207,7 +208,7 @@ p[span] {
     left:300px; */
   position: relative;
   text-align: left;
-  left: 350px;
+  left: 30px;
 }
 
 /* others */
