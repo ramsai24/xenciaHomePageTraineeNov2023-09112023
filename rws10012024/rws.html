@@ -53,12 +53,15 @@
           <h3 class="bottom-container-head">
             Part1:Applicant's Particulars (To be Completed by Contractor)
           </h3>
+
           <div applicationType class="inputEl-container">
             <label class="labelEl" for="application-type"
               >Application Type <span>*</span></label
             ><br />
             <select id="application-type">
-              <option>__ SelectApplication Type___</option>
+              <option value="__ SelectApplication Type___">
+                __ SelectApplication Type___
+              </option>
 
               <option value="New Application -Long Term Contractor Pass">
                 New Application -Long Term Contrator Pass
@@ -68,21 +71,23 @@
               </option>
               <option>New Application</option>
             </select>
-            <p span id="applicationTypeSpanEl">a</p>
+            <p span id="applicationTypeSpanEl">applicationTypeSpanEl</p>
           </div>
+
           <div documentType class="inputEl-container">
-            <label for="document-type">Document Type <span>*</span></label
+            <label for="documentType">Document Type <span>*</span></label
             ><br />
-            <select id="document-type">
-              <option>__ Select Document Type___</option>
+            <select id="documentType">
+              <option>__ SelectApplication Type___</option>
 
               <option>NRIC</option>
               <option>FIN</option>
               <option>Passport</option>
             </select>
-            <p span id="documentTypeSpanEl">e</p>
+            <p span id="documentTypeSpanEl">documentTypeSpanEl</p>
           </div>
-          <div dual>
+
+          <div dual DocumentNumber>
             <div documentNumber class="inputEl-container">
               <label for="documentNum">Document No <span>*</span></label
               ><br />
@@ -91,7 +96,7 @@
                 type="number"
                 id="documentNum"
               />
-              <p span id="documentNumberSpanEl">d</p>
+              <p span id="documentNumberSpanEl">documentNumberSpanEl</p>
             </div>
             <div studentPass>
               <input less type="checkbox" />
@@ -112,6 +117,7 @@
             />
             <p span id="fullNameSpanEl">fullName</p>
           </div>
+
           <div nationality class="inputEl-container">
             <label class="labelEl" for="nationality">
               Nationality <span>*</span></label
@@ -246,7 +252,7 @@
             <label for="dateTempPass">
               Tempory Pass: Working hours from
               <select less id="startHours">
-                <option value="00">00</option>
+                <!-- <option value="00">00</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
                 <option value="03">03</option>
@@ -269,14 +275,14 @@
                 <option value="20">20</option>
                 <option value="21">21</option>
                 <option value="22">22</option>
-                <option value="23">23</option>
+                <option value="23">23</option> -->
               </select>
 
               :
               <select less id="startMinutes"></select>
               (hrs) to
               <select less id="endHours">
-                <option value="00">00</option>
+                <!-- <option value="00">00</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
                 <option value="03">03</option>
@@ -299,12 +305,13 @@
                 <option value="20">20</option>
                 <option value="21">21</option>
                 <option value="22">22</option>
-                <option value="23">23</option>
+                <option value="23">23</option> -->
               </select>
               :
               <select less id="endMinutes"></select>
               (hrs) </label
             ><br />
+            <!-- <p span id="timeTempPassSpanEl">timeTempPassSpanEl</p> -->
 
             <input type="date" id="dateTempPass" />
 
