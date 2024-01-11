@@ -1,0 +1,213 @@
+.bg-container {
+  background-size: cover;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content {
+  /* border: 1px solid red; */
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+img[logo] {
+  width: 250px;
+}
+
+.top-container,
+.bottom-container {
+  border: 1px solid;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.top-container {
+  margin-top: 40px;
+}
+
+.bottom-container {
+  margin-top: 60px;
+}
+
+h3 {
+  margin-top: 0px;
+  /* border: 1px solid; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  padding-left: 30px;
+  background-color: lightgrey;
+}
+
+span[notes] {
+  font-weight: 600;
+}
+
+ol {
+  /* padding-left: 0px; */
+}
+
+li {
+  font-size: 14px;
+  margin: 8px;
+  margin-left: 12px;
+}
+
+.top-container-head {
+  background-color: #b80000;
+  color: #fff;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.bottom-container-head {
+}
+
+.inputEl-container {
+  margin: 20px;
+}
+
+label {
+  font-size: 16x;
+  font-weight: 700;
+}
+
+.labelEl {
+  padding-bottom: 40px !important;
+}
+
+select,
+input {
+  margin-top: 20px;
+  width: 500px;
+  padding: 5px;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+div[dual] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+textarea {
+  width: 600px;
+  height: 40px;
+  margin-top: 12px;
+  padding: 12px;
+}
+
+select[less] {
+  width: 60px;
+}
+
+input[less] {
+  width: 10px;
+}
+
+input[file] {
+  /* border: 1px solid; */
+}
+
+h5 {
+  /* border: 1px solid; */
+  margin-bottom: 0px;
+}
+
+div[attach-container] {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+div[attachment],
+div[apporvers] {
+  padding: 10px;
+  padding-left: 30px;
+  margin-top: 0px;
+}
+
+.rws-above,
+div[apprEmailName] {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+label[rwsManager],
+h6[appr],
+label[rws],
+input[email],
+h6[email],
+h6[name],
+input[name] {
+  width: 300px;
+  align-self: center;
+  justify-content: center;
+}
+
+input[email],
+input[name] {
+  margin-right: 10px;
+}
+
+h6[name] {
+  margin-left: 30px;
+}
+
+label[rws] {
+  /* align-self: center; */
+  /* border: 1px solid; */
+}
+
+textarea[remark] {
+  width: 95%;
+  margin: 12px;
+  height: 80px;
+}
+
+div[buttons] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+button {
+  margin-right: 10px;
+  background-color: #b80000;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* others */
+
+p[span] {
+  color: red;
+  font-size: 12px;
+  /* border: 12x solid blue; */
+  /* display: inline-block; */
+  width: 150px;
+  /* position: absolute;
+    left:300px; */
+  position: relative;
+  text-align: left;
+  left: 350px;
+}
+
+/* others */

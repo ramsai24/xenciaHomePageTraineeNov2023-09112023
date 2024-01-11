@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the Document</title>
+  </head>
+  <body>
+    <script>
+      let link = document.createElement("a");
+      link.download = "welcome.txt";
+      let blob = new Blob(["Hello World"], { type: "text/plain" });
+      console.log();
+      let reader = new FileReader();
+      reader.readAsDataURL(blob); // converts ta blob to base64 and calls onload
+      reader.onload = function (event) {
+        link.href = reader.result; // data url
+        link.click();
+        // event.view.window.location.pathname = "/textFile08012024/welcome.txt";
+      };
+    </script>
+  </body>
+</html>

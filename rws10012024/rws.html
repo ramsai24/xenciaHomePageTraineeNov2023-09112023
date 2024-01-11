@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="rws.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="bg-container">
+      <div class="content">
+        <img
+          logo
+          src="https://res.cloudinary.com/daoquetki/image/upload/v1704878871/task10012024/epse0wqxtparuzjtoupx.png"
+          alt="rwsLogo"
+        />
+        <div class="top-container">
+          <h3 class="top-container-head">
+            Security Pass Aplication 2 Casing Contractor
+          </h3>
+          <ol>
+            <span notes>Notes : </span>
+
+            <li>
+              This application is for Contractors who are engaged to perform
+              dully within casino boundary
+            </li>
+            <li>
+              This application is for Contractors who are engaged to perform
+              dully within casino boundary
+            </li>
+            <li>
+              This application is for Contractors who are engaged to perform
+              dully within casino boundary
+            </li>
+            <li>
+              This application is for Contractors who are engaged to perform
+              dully within casino boundary
+            </li>
+            <li>
+              This application is for Contractors who are engaged to perform
+              dully within casino boundary
+            </li>
+
+            <li>
+              This application is for Contractors who are engaged to perform
+              dully within casino boundary
+            </li>
+          </ol>
+        </div>
+        <div class="bottom-container">
+          <h3 class="bottom-container-head">
+            Part1:Applicant's Particulars (To be Completed by Contractor)
+          </h3>
+          <div applicationType class="inputEl-container">
+            <label class="labelEl" for="application-type"
+              >Application Type <span>*</span></label
+            ><br />
+            <select id="application-type">
+              <option>__ SelectApplication Type___</option>
+
+              <option value="New Application -Long Term Contractor Pass">
+                New Application -Long Term Contrator Pass
+              </option>
+              <option value="New Application -Tempory ">
+                New Application -Tempory Term Contrator Pass
+              </option>
+              <option>New Application</option>
+            </select>
+            <p span id="applicationTypeSpanEl">a</p>
+          </div>
+          <div documentType class="inputEl-container">
+            <label for="document-type">Document Type <span>*</span></label
+            ><br />
+            <select id="document-type">
+              <option>__ Select Document Type___</option>
+
+              <option>NRIC</option>
+              <option>FIN</option>
+              <option>Passport</option>
+            </select>
+            <p span id="documentTypeSpanEl">e</p>
+          </div>
+          <div dual>
+            <div documentNumber class="inputEl-container">
+              <label for="documentNum">Document No <span>*</span></label
+              ><br />
+              <input
+                placeholder="Please enter Document Number"
+                type="number"
+                id="documentNum"
+              />
+              <p span id="documentNumberSpanEl">d</p>
+            </div>
+            <div studentPass>
+              <input less type="checkbox" />
+              <label themeColor
+                >I am Student Pass Holder(refer caluse 7).</label
+              >
+              <p span id="studentPassSpanEl"></p>
+            </div>
+          </div>
+
+          <div fullName class="inputEl-container">
+            <label for="fullName">Full Name <span>*</span></label
+            ><br />
+            <input
+              placeholder="Please enter Full Name"
+              type="text"
+              id="fullName"
+            />
+            <p span id="fullNameSpanEl">fullName</p>
+          </div>
+          <div nationality class="inputEl-container">
+            <label class="labelEl" for="nationality">
+              Nationality <span>*</span></label
+            ><br />
+            <select id="nationality">
+              <option>__ Select Country___</option>
+
+              <option value="India">India</option>
+              <option value="Singpore">Singpore</option>
+              <option value="USA">USA</option>
+            </select>
+            <p span id="nationalitySpanEl">nationality</p>
+          </div>
+          <div dual>
+            <div dob class="inputEl-container">
+              <label for="dob">Date of Birth <span>*</span></label
+              ><br />
+              <input type="date" id="dob" />
+              <p span id="dobSpanEl">dob</p>
+            </div>
+            <div>
+              <input less type="checkbox" />
+              <label themeColor>I am 21 years old or above.</label>
+            </div>
+          </div>
+
+          <div contactNum class="inputEl-container">
+            <label for="contactNum">Contact No <span>*</span></label
+            ><br />
+            <input
+              type="number"
+              placeholder="Please enter Contact Number"
+              id="contactNum"
+            />
+            <p span id="contactNumSpanEl">contactNumSpanEl</p>
+          </div>
+          <div companyType class="inputEl-container">
+            <label class="labelEl" for="companyType">
+              Company Type <span>*</span></label
+            ><br />
+            <select id="companyType">
+              <option>__ Companay Type___</option>
+
+              <option value="India">India</option>
+              <option value="Singpore">Singpore</option>
+              <option value="USA">USA</option>
+            </select>
+            <p span id="companyTypeSpanEl">companyTypeSpanEl</p>
+          </div>
+          <div companyName class="inputEl-container">
+            <label for="companyName">Company Name<span>*</span></label
+            ><br />
+            <input
+              type="text"
+              placeholder="Please enter Company Name"
+              id="companyName"
+            />
+            <p span id="companyNameSpanEl">companyNameSpanEl</p>
+          </div>
+          <div mainContractorName class="inputEl-container">
+            <label for="mainContractorName"
+              >Main Contractor Name<span>*</span></label
+            ><br />
+            <input
+              type="text"
+              placeholder="Please enter Main Contractor Name"
+              id="mainContractorName"
+            />
+            <p span id="mainContractorNameSpanEl">mainContractorNameSpanEl</p>
+          </div>
+          <div stateWorkDutyInCasinoBoundary class="inputEl-container">
+            <label for="stateWorkDutyInCasinoBoundary">
+              State Work Duty in Casino boundary<span>*</span></label
+            ><br />
+
+            <textarea
+              col="300"
+              rows="14"
+              placeholder="Please enter State Work Duty in Casino boundary"
+              id="stateWorkDutyInCasinoBoundary"
+            ></textarea>
+            <p span id="stateWorkDutyInCasinoBoundarySpanEl">
+              stateWorkDutyInCasinoBoundarySpanEl
+            </p>
+          </div>
+          <div projectDescription class="inputEl-container">
+            <label for="projectDescription"
+              >Project Description<span>*</span></label
+            ><br />
+
+            <textarea
+              col="300"
+              rows="14"
+              placeholder="Please enter Project Description"
+              id="projectDescription"
+            ></textarea>
+            <p span id="projectDescriptionSpanEl">projectDescriptionSpanEl</p>
+          </div>
+          <div contractorPassIssuePeriod class="inputEl-container">
+            <label for="contractorPassIssuePeriod"
+              >Contractor Pass Issue Period<span>*</span></label
+            ><br />
+            <input less type="checkbox" id="contractorPassIssuePeriod" />
+            <label for="contractorPassIssuePeriod"
+              >Pass issuance -Long Term Contractor Pass</label
+            >
+            <p span id="contractorPassIssuePeriodSpanEl">
+              contractorPassIssuePeriodSpanEl
+            </p>
+          </div>
+          <div longTermPassStartDate class="inputEl-container">
+            <label for="longTermPassStartDate"
+              >Long-term Pass: Start Date </label
+            ><br />
+            <input type="date" id="longTermPassStartDate" />
+            <p span id="longTermPassStartDateSpanEl">
+              longTermPassStartDateSpanEl
+            </p>
+          </div>
+          <div longTermPassEndDate class="inputEl-container">
+            <label for="longTermPassEndDate">to End Date </label><br />
+            <input type="date" id="longTermPassEndDate" />
+            <p span id="longTermPassEndDateSpanEl">longTermPassEndDateSpanEl</p>
+          </div>
+          <div temPass class="inputEl-container">
+            <input less type="checkbox" id="temPass" />
+            <label for="temPass">Pass issuance -Tempory Pass</label>
+            <p span id="temPassSpanEl">temPassSpanEl</p>
+          </div>
+
+          <div dateTempPass class="inputEl-container">
+            <label for="dateTempPass">
+              Tempory Pass: Working hours from
+              <select less id="startHours">
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+              </select>
+
+              :
+              <select less id="startMinutes"></select>
+              (hrs) to
+              <select less id="endHours">
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+              </select>
+              :
+              <select less id="endMinutes"></select>
+              (hrs) </label
+            ><br />
+
+            <input type="date" id="dateTempPass" />
+
+            <p span id="dateTempPassSpanEl">dateTempPassSpanEl</p>
+          </div>
+          <div emailID class="inputEl-container">
+            <label for="emailId">Email ID<span>*</span></label
+            ><br />
+            <input
+              type="text"
+              placeholder="Please enter Email Address"
+              id="emailId"
+            />
+            <p span id="emailIDSpanEl">emailIDSpanEl</p>
+          </div>
+          <div attach-container>
+            <h3>Attachments <span>*</span></h3>
+            <div attachment>
+              <h5>
+                Notes:File should not be uploaded with special charcters("#
+                %&&*"?/\{|}").
+              </h5>
+              <input file type="file" accept=".pdf" />
+              <h6>
+                Please attach vendor supporting document whick should be less
+                than 10MB.
+              </h6>
+            </div>
+          </div>
+          <div acknowledge class="inputEl-container">
+            <input less type="checkbox" id="acknowledge" />
+            <label for="acknowledge">I acknowledge and agree that:</label>
+            <p span id="acknowledgeSpanEl">acknowledgeSpanEl</p>
+          </div>
+
+          <div apporvers>
+            <div apprEmailName>
+              <h6 appr>Approvers</h6>
+              <h6 email>EmailID<span>*</span></h6>
+              <h6 name>Name<span>*</span></h6>
+            </div>
+
+            <div rwsAbove class="rws-above">
+              <label rws> RWS Approved Manger & above<span>*</span></label>
+              <div>
+                <input
+                  email
+                  type="text"
+                  placeholder="Please enter Email Address"
+                  id="emailRwsAbove"
+                />
+                <p span id="email1SpanEl"></p>
+              </div>
+              <div>
+                <input
+                  name
+                  type="text"
+                  placeholder="Please enter Name"
+                  id="nameRwsAbove"
+                />
+                <p span id="name1SpanEl"></p>
+              </div>
+            </div>
+            <div rwsManager class="rws-above">
+              <label rwsManager> RWS Approved Manger & above Alternate</label>
+              <div>
+                <input
+                  email
+                  type="text"
+                  placeholder="Please enter Email Address"
+                  id="emailRwsManager"
+                />
+                <p span id="email2SpanEl"></p>
+              </div>
+              <div>
+                <input
+                  name
+                  type="text"
+                  placeholder="Please enter Name"
+                  id="nameRwsManager"
+                />
+                <p span id="name2SpanEl"></p>
+              </div>
+            </div>
+          </div>
+          <div attach-container>
+            <h3>Remarks</h3>
+            <textarea remark></textarea>
+          </div>
+        </div>
+        <div buttons>
+          <button>Submit</button>
+          <button>Cancel</button>
+        </div>
+      </div>
+      <p copyRight>
+        Copyright Resort World at Sentosa Pte. Ltd.All Rights Reserved
+      </p>
+    </div>
+
+    <script type="text/javascript" src="rws.js"></script>
+  </body>
+</html>
