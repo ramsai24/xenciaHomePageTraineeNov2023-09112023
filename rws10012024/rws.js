@@ -88,7 +88,7 @@ documentNumberSpanEl.text("");
 // });
 
 documentNum.blur((event) => {
-  if ((event.target.value = "")) {
+  if (event.target.value === "") {
     documentNumberSpanEl.text("Please enter Document Number");
   } else {
     documentNumberSpanEl.text("");
