@@ -148,14 +148,14 @@ bottomContentContent.appendChild(sliderContainer);
 let itemsArray = [
   {
     id: 1,
-    btnId: "fashion",
-    styleType: "fashion",
+    styleType: "Travel",
+    btnId: "travel",
     imgUrl:
-      "https://res.cloudinary.com/daoquetki/image/upload/v1705399854/blog%20task16012024/edzceq9w1yuecuye7feh.webp",
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705400165/blog%20task16012024/rrflccrhiq72sfv5w4xl.jpg",
     title: "My Summer Diary",
-    desImgUrl:
-      "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/ss6d3pghptnrio9tcbgl.jpg",
     style: "Lifestyle",
+    desImgUrl:
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/zknc1rplcoy7axgur407.jpg",
     description:
       "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
   },
@@ -174,25 +174,52 @@ let itemsArray = [
   },
   {
     id: 3,
-    styleType: "Travel",
-    btnId: "travel",
+    btnId: "fashion",
+    styleType: "fashion",
     imgUrl:
-      "https://res.cloudinary.com/daoquetki/image/upload/v1705400165/blog%20task16012024/rrflccrhiq72sfv5w4xl.jpg",
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705399854/blog%20task16012024/edzceq9w1yuecuye7feh.webp",
     title: "My Summer Diary",
-    style: "Lifestyle",
     desImgUrl:
-      "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/zknc1rplcoy7axgur407.jpg",
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/ss6d3pghptnrio9tcbgl.jpg",
+    style: "Lifestyle",
     description:
       "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
   },
 ];
+
+var indexObj = { indexValue: 0 };
+
 let cardsContainer = document.createElement("div");
 cardsContainer.classList.add("cards-container");
 bottomContentContent.appendChild(cardsContainer);
 
 for (let each of itemsArray) {
+  let indexValue;
   let cardButton = document.createElement("button");
   cardButton.classList.add("card-button");
+  cardButton.setAttribute("id", each.btnId);
+  //   cardButton.addEventListener("click", function (event) {
+  //     // console.log(event.target.id);
+  //     // event.target.reload();
+  //     bottomContentContent.removeChild(descriptionContainer);
+
+  //     index = itemsArray.findIndex((each) => {
+  //       if (event.target.id === each.btnId) {
+  //         return true;
+  //       }
+  //     });
+
+  //     indexObj["indexValue"] = index;
+  //     console.log(index);
+  //     console.log(indexObj);
+
+  //     // console.log();
+  //     descriptionFunctionality(indexObj.indexValue);
+  //   });
+  //   cardButton.onclick = () => {
+  //     index = each.id;
+  //     console.log("event happend");
+  //   };
   cardsContainer.appendChild(cardButton);
 
   let imageCard = document.createElement("img");
@@ -202,13 +229,10 @@ for (let each of itemsArray) {
   cardButton.appendChild(imageCard);
 }
 
-//------------------------Description-Container
-
+let details = itemsArray[0];
 let descriptionContainer = document.createElement("div");
 descriptionContainer.setAttribute("class", "description-container");
 bottomContentContent.appendChild(descriptionContainer);
-
-let details = itemsArray[0];
 
 let descriptionImage = document.createElement("img");
 descriptionImage.setAttribute("src", details.desImgUrl);
@@ -222,7 +246,7 @@ detailsContainer.classList.add("details-container");
 descriptionContainer.appendChild(detailsContainer);
 
 let detailsHead = document.createElement("h4");
-detailsHead.textContent = details.title;
+detailsHead.textContent = details.btnId;
 detailsContainer.appendChild(detailsHead);
 
 //------------------------Caption-Container------Start
@@ -253,3 +277,79 @@ let continueReadingBtn = document.createElement("button");
 continueReadingBtn.textContent = "CONTINUE READING";
 continueReadingBtn.style.textAlign = "start";
 detailsContainer.appendChild(continueReadingBtn);
+
+//------------------------Description-Container
+function descriptionFunctionality(index) {
+  console.log(indexObj.indexValue);
+  let details = itemsArray[index];
+  //   descriptionContainer.textContent = "";
+  bottomContentContent.removeChild(descriptionContainer);
+  descriptionContainer = document.createElement("div");
+
+  descriptionContainer.setAttribute("class", "description-container");
+  bottomContentContent.appendChild(descriptionContainer);
+
+  descriptionImage = document.createElement("img");
+  descriptionImage.setAttribute("src", details.desImgUrl);
+  descriptionImage.setAttribute("name", "descriptionImage");
+  descriptionContainer.appendChild(descriptionImage);
+
+  //------------------------Details-Container
+
+  detailsContainer = document.createElement("div");
+  detailsContainer.classList.add("details-container");
+  descriptionContainer.appendChild(detailsContainer);
+
+  detailsHead = document.createElement("h4");
+  detailsHead.textContent = details.btnId;
+  detailsContainer.appendChild(detailsHead);
+
+  //------------------------Caption-Container------Start
+
+  captionContainer = document.createElement("div");
+  captionContainer.classList.add("caption-container");
+
+  detailsContainer.appendChild(captionContainer);
+
+  caption = document.createElement("p");
+  caption.textContent = details.style;
+  captionContainer.appendChild(caption);
+
+  hrLine = document.createElement("hr");
+  hrLine.style.color = "red";
+  hrLine.style.width = "60%";
+
+  captionContainer.appendChild(hrLine);
+
+  //------------------------Caption-Container------End
+
+  description = document.createElement("p");
+  description.textContent = details.description;
+  description.style.textAlign = "start";
+  detailsContainer.appendChild(description);
+
+  continueReadingBtn = document.createElement("button");
+  continueReadingBtn.textContent = "CONTINUE READING";
+  continueReadingBtn.style.textAlign = "start";
+  detailsContainer.appendChild(continueReadingBtn);
+}
+
+let newIndex = 0;
+
+for (let each of itemsArray) {
+  let fashionEvent = document.getElementById(each.btnId);
+  fashionEvent.onclick = function (event) {
+    console.log("event Occured");
+    // console.log(event.target);
+
+    let traceIndex = itemsArray.findIndex((each) => {
+      if (each.btnId === event.target.id) {
+        console.log(each.btnId);
+        return true;
+      }
+    });
+    console.log(traceIndex);
+    newIndex = traceIndex;
+    descriptionFunctionality(newIndex);
+  };
+}
