@@ -123,11 +123,11 @@ navContainer2.appendChild(logOutIcon);
 
 //-------------------------bottom-Content-container
 
-let bottomContentContent = docuemnt.createElement("nav");
+let bottomContentContent = document.createElement("div");
 // bottomContentContent.textContent = "ok";
 contentContainer.appendChild(bottomContentContent);
 
-let mainTilte = docuemnt.createElement("h1");
+let mainTilte = document.createElement("h1");
 mainTilte.textContent = "DOLUS BLOG";
 mainTilte.style.color = "black";
 bottomContentContent.appendChild(mainTilte);
