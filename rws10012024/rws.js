@@ -66,26 +66,26 @@ console.log(documentNumberSpanEl.text());
 
 documentNumberSpanEl.text("");
 
-// documentNum.keydown((event) => {
-//   let values = event.target.value;
-//   console.log(event.target.value);
+documentNum.input((event) => {
+  let values = event.target.value;
+  console.log(event.target.value);
 
-//   if (values.includes("")) {
-//     // documentNum.prop("value", values.replace("", ""));
-//   }
+  if (values.includes("")) {
+    documentNum.prop("value", values.replace("", ""));
+  }
 
-//   //   if (value.includes("e")) {
-//   //     value.slice(0, value.length - 2);
-//   //   }
-// });
+  //   if (value.includes("e")) {
+  //     value.slice(0, value.length - 2);
+  //   }
+});
 
-// documentNum.change((event) => {
-//   if (event.target.value === "") {
-//     documentNumberSpanEl.text("Please enter Document Number");
-//   } else {
-//     documentNumberSpanEl.text("");
-//   }
-// });
+documentNum.change((event) => {
+  if (event.target.value === "") {
+    documentNumberSpanEl.text("Please enter Document Number");
+  } else {
+    documentNumberSpanEl.text("");
+  }
+});
 
 documentNum.blur((event) => {
   if (event.target.value === "") {
