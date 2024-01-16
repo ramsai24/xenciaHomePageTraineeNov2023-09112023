@@ -9,6 +9,7 @@
 .content-container {
   background-color: #fff;
   /* min-height: 90vh; */
+  text-align: centers;
 }
 
 a {
@@ -31,4 +32,55 @@ img[name="logout"] {
   width: 18px;
   margin-left: 5px;
   padding-bottom: 4px;
+}
+
+.slider-container {
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/daoquetki/image/upload/v1699962549/cld-sample-2.jpg");
+  height: 500px;
+}
+.cards-container {
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 30px;
+  margin: 18px;
+}
+
+.card-button {
+  margin: 18px;
+}
+
+img[name="cardImage"] {
+  width: 200px;
+  height: 250px;
+}
+
+.description-container {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+img[name="descriptionImage"] {
+  height: 300px;
+  width: 200px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid red;
+  width: 60%;
+  height: 80%;
+}
+
+.caption-container {
+  width: 400px;
+  display: flex;
 }

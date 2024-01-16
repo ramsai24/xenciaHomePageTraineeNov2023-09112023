@@ -127,7 +127,129 @@ let bottomContentContent = document.createElement("div");
 // bottomContentContent.textContent = "ok";
 contentContainer.appendChild(bottomContentContent);
 
+//-------------------------main-Title
+
 let mainTilte = document.createElement("h1");
 mainTilte.textContent = "DOLUS BLOG";
-mainTilte.style.color = "black";
+mainTilte.style.textAlign = "center";
+mainTilte.style.paddingTop = "30px";
+
 bottomContentContent.appendChild(mainTilte);
+
+//-------------------------Slider-Container
+
+let sliderContainer = document.createElement("div");
+sliderContainer.setAttribute("class", "slider-container");
+sliderContainer.textContent = "hi";
+bottomContentContent.appendChild(sliderContainer);
+
+//-------------------------cards-container
+
+let itemsArray = [
+  {
+    id: 1,
+    btnId: "fashion",
+    styleType: "fashion",
+    imgUrl:
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705399854/blog%20task16012024/edzceq9w1yuecuye7feh.webp",
+    title: "My Summer Diary",
+    desImgUrl:
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/ss6d3pghptnrio9tcbgl.jpg",
+    style: "Lifestyle",
+    description:
+      "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
+  },
+  {
+    id: 2,
+    btnId: "toys",
+    styleType: "Toys",
+    imgUrl:
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705400118/blog%20task16012024/dnvbs4fwdg0ydr90rlcc.jpg",
+    title: "My Summer Diary",
+    style: "Lifestyle",
+    desImgUrl:
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/bd08nfvuum5wofuqkaqa.jpg",
+    description:
+      "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
+  },
+  {
+    id: 3,
+    styleType: "Travel",
+    btnId: "travel",
+    imgUrl:
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705400165/blog%20task16012024/rrflccrhiq72sfv5w4xl.jpg",
+    title: "My Summer Diary",
+    style: "Lifestyle",
+    desImgUrl:
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/zknc1rplcoy7axgur407.jpg",
+    description:
+      "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
+  },
+];
+let cardsContainer = document.createElement("div");
+cardsContainer.classList.add("cards-container");
+bottomContentContent.appendChild(cardsContainer);
+
+for (let each of itemsArray) {
+  let cardButton = document.createElement("button");
+  cardButton.classList.add("card-button");
+  cardsContainer.appendChild(cardButton);
+
+  let imageCard = document.createElement("img");
+  imageCard.src = each.imgUrl;
+  imageCard.setAttribute("name", "cardImage");
+  imageCard.setAttribute("alt", each.id);
+  cardButton.appendChild(imageCard);
+}
+
+//------------------------Description-Container
+
+let descriptionContainer = document.createElement("div");
+descriptionContainer.setAttribute("class", "description-container");
+bottomContentContent.appendChild(descriptionContainer);
+
+let details = itemsArray[0];
+
+let descriptionImage = document.createElement("img");
+descriptionImage.setAttribute("src", details.desImgUrl);
+descriptionImage.setAttribute("name", "descriptionImage");
+descriptionContainer.appendChild(descriptionImage);
+
+//------------------------Details-Container
+
+let detailsContainer = document.createElement("div");
+detailsContainer.classList.add("details-container");
+descriptionContainer.appendChild(detailsContainer);
+
+let detailsHead = document.createElement("h4");
+detailsHead.textContent = details.title;
+detailsContainer.appendChild(detailsHead);
+
+//------------------------Caption-Container------Start
+
+let captionContainer = document.createElement("div");
+captionContainer.classList.add("caption-container");
+
+detailsContainer.appendChild(captionContainer);
+
+let caption = document.createElement("p");
+caption.textContent = details.style;
+captionContainer.appendChild(caption);
+
+let hrLine = document.createElement("hr");
+hrLine.style.color = "red";
+hrLine.style.width = "60%";
+
+captionContainer.appendChild(hrLine);
+
+//------------------------Caption-Container------End
+
+let description = document.createElement("p");
+description.textContent = details.description;
+description.style.textAlign = "start";
+detailsContainer.appendChild(description);
+
+let continueReadingBtn = document.createElement("button");
+continueReadingBtn.textContent = "CONTINUE READING";
+continueReadingBtn.style.textAlign = "start";
+detailsContainer.appendChild(continueReadingBtn);
