@@ -1,0 +1,30 @@
+
+// let listContainer = document.createElement("ul");
+// listContainer.classList.add("list-container");
+// document.body.appendChild(listContainer);
+
+// let showContainerEl = document.createElement("div");
+// document.body.appendChild(showContainerEl);
+
+// function showImgConatiner(object) {
+//   showContainerEl.textContent = "";
+//   let paraEl = document.createElement("p");
+//   paraEl.textContent = object.btnId;
+//   showContainerEl.appendChild(paraEl);
+// }
+
+// function renderProducts() {
+//   itemsArray.forEach((each) => {
+//     let listItem = document.createElement("li");
+//     listItem.classList.add("list-item");
+//     listItem.addEventListener("click", () => showImgConatiner(each));
+//     listContainer.appendChild(listItem);
+
+//     let listImg = document.createElement("img");
+//     listImg.classList.add("list-img");
+//     listImg.src = each.imgUrl;
+//     listItem.appendChild(listImg);
+//   });
+// }
+
+// renderProducts();

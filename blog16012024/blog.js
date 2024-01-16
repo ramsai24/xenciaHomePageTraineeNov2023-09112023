@@ -280,9 +280,10 @@ detailsContainer.appendChild(continueReadingBtn);
 
 //------------------------Description-Container
 function descriptionFunctionality(index) {
-  console.log(indexObj.indexValue);
+  //   console.log(indexObj.indexValue);
+  descriptionContainer.textContent = "";
   let details = itemsArray[index];
-  //   descriptionContainer.textContent = "";
+
   bottomContentContent.removeChild(descriptionContainer);
   descriptionContainer = document.createElement("div");
 
