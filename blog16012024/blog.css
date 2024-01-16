@@ -1,0 +1,34 @@
+.bg-container {
+  background-size: cover;
+  min-height: 100vh;
+  background-color: lightgray;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.content-container {
+  background-color: #fff;
+  /* min-height: 90vh; */
+}
+
+a {
+  margin: 12px;
+}
+
+i[name="send"] {
+  color: red;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+img[name="logout"] {
+  width: 18px;
+  margin-left: 5px;
+  padding-bottom: 4px;
+}
