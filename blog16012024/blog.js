@@ -255,9 +255,9 @@ bottomContentContent.appendChild(mainTilte);
 //---------------------IMAGES LIST
 
 let imagesList = [
-  "https://res.cloudinary.com/daoquetki/image/upload/v1705468160/blog%20task16012024/rjbhatg2eqn0tivsnlyt.jpg",
-  "https://res.cloudinary.com/daoquetki/image/upload/v1705468159/blog%20task16012024/tdhgxkwq4xstrpyumpzo.jpg",
-  "https://res.cloudinary.com/daoquetki/image/upload/v1705468159/blog%20task16012024/we0osfrrq0515vbcfzyd.jpg",
+  "https://res.cloudinary.com/daoquetki/image/upload/v1705485292/blog%20task16012024/z9ipmer02r39qgkbgnzp.jpg",
+  "https://res.cloudinary.com/daoquetki/image/upload/v1705485292/blog%20task16012024/azy31d1npsct8so4pyfo.jpg",
+  "https://res.cloudinary.com/daoquetki/image/upload/v1705485292/blog%20task16012024/gptbfmqtjcstglyrdfso.jpg",
 ];
 
 let count = 0;
@@ -277,34 +277,43 @@ leftSlideBtn.setAttribute("name", "arrowBtn");
 sliderContainer.appendChild(leftSlideBtn);
 
 let imgSlide = document.createElement("img");
+
 imgSlide.setAttribute("name", "img-slide");
 
 imgSlide.src = imagesList[0];
 // "https://res.cloudinary.com/daoquetki/image/upload/v1705468160/blog%20task16012024/rjbhatg2eqn0tivsnlyt.jpg";
 sliderContainer.appendChild(imgSlide);
 
-// leftSlideBtn.onclick = function () {
-//   count -= 1;
-//   if (count <= 0) {
-//     count = 0;
-//   }
-//   console.log(count);
+leftSlideBtn.onclick = function () {
+  count -= 1;
+  if (count <= 0) {
+    count = 0;
+  }
+  console.log(count);
 
-//   imgSlide.src = imagesList[count];
-// };
+  imgSlide.src = imagesList[count];
+  imgSlide.classList.add("animation-class");
+  setTimeout(function () {
+    imgSlide.classList.remove("animation-class");
+  }, 2000);
+};
 
 let rightSlideBtn = document.createElement("button");
 rightSlideBtn.classList.add("fa-solid", "fa-arrow-right");
 rightSlideBtn.setAttribute("name", "arrowBtn");
-// rightSlideBtn.onclick = function () {
-//   count += 1;
-//   if (count >= countOfImagesList) {
-//     count = 2;
-//   }
-//   console.log(count);
+rightSlideBtn.onclick = function () {
+  count += 1;
+  if (count >= countOfImagesList) {
+    count = 2;
+  }
+  console.log(count);
 
-//   imgSlide.src = imagesList[count];
-// };
+  imgSlide.src = imagesList[count];
+  imgSlide.classList.add("animation-class");
+  setTimeout(function () {
+    imgSlide.classList.remove("animation-class");
+  }, 2000);
+};
 sliderContainer.appendChild(rightSlideBtn);
 
 //-------------------------cards-container
@@ -347,7 +356,7 @@ let itemsArray = [
       "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/ss6d3pghptnrio9tcbgl.jpg",
     style: "Lifestyle",
     description:
-      "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
+      "Fashion is a term used interchangeably to describe the creation of clothing,  social status, self-expression, and group ...",
   },
 ];
 
@@ -416,7 +425,7 @@ detailsContainer.classList.add("details-container");
 descriptionContainer.appendChild(detailsContainer);
 
 let detailsHead = document.createElement("h4");
-detailsHead.textContent = details.btnId;
+detailsHead.textContent = details.btnId.toUpperCase();
 detailsContainer.appendChild(detailsHead);
 
 //------------------------Caption-Container------Start
@@ -428,9 +437,13 @@ detailsContainer.appendChild(captionContainer);
 
 let caption = document.createElement("p");
 caption.textContent = details.style;
+caption.style.fontSize = "12px";
+caption.style.fontWeight = "500";
 captionContainer.appendChild(caption);
 
 let hrLine = document.createElement("hr");
+// hrLine.style.border = "1px solid";
+hrLine.classList.add("hr-line");
 hrLine.style.color = "red";
 hrLine.style.width = "60%";
 
@@ -439,11 +452,13 @@ captionContainer.appendChild(hrLine);
 //------------------------Caption-Container------End
 
 let description = document.createElement("p");
+description.classList.add("description");
 description.textContent = details.description;
 description.style.textAlign = "start";
 detailsContainer.appendChild(description);
 
 let continueReadingBtn = document.createElement("button");
+continueReadingBtn.classList.add("contBtn");
 continueReadingBtn.textContent = "CONTINUE READING";
 continueReadingBtn.style.textAlign = "start";
 detailsContainer.appendChild(continueReadingBtn);
@@ -451,7 +466,7 @@ detailsContainer.appendChild(continueReadingBtn);
 //------------------------Description-Container
 function descriptionFunctionality(index) {
   //   console.log(indexObj.indexValue);
-  descriptionContainer.textContent = "";
+  // descriptionContainer.textContent = "";
   let details = itemsArray[index];
 
   bottomContentContent.removeChild(descriptionContainer);
@@ -460,11 +475,11 @@ function descriptionFunctionality(index) {
   descriptionContainer.setAttribute("class", "description-container");
   bottomContentContent.appendChild(descriptionContainer);
 
-  borderContainer = document.createElement("div");
+  // borderContainer = document.createElement("div");
   borderContainer.classList.add("border-container");
   descriptionContainer.appendChild(borderContainer);
 
-  descriptionImage = document.createElement("img");
+  // descriptionImage = document.createElement("img");
   descriptionImage.setAttribute("src", details.desImgUrl);
   descriptionImage.setAttribute("name", "descriptionImage");
   borderContainer.appendChild(descriptionImage);
@@ -476,7 +491,7 @@ function descriptionFunctionality(index) {
   descriptionContainer.appendChild(detailsContainer);
 
   detailsHead = document.createElement("h4");
-  detailsHead.textContent = details.btnId;
+  detailsHead.textContent = details.btnId.toUpperCase();
   detailsContainer.appendChild(detailsHead);
 
   //------------------------Caption-Container------Start
@@ -488,9 +503,12 @@ function descriptionFunctionality(index) {
 
   caption = document.createElement("p");
   caption.textContent = details.style;
+  caption.style.fontSize = "12px";
+  caption.style.fontWeight = "500";
   captionContainer.appendChild(caption);
 
   hrLine = document.createElement("hr");
+  hrLine.classList.add("hr-line");
   hrLine.style.color = "red";
   hrLine.style.width = "60%";
 
@@ -499,11 +517,13 @@ function descriptionFunctionality(index) {
   //------------------------Caption-Container------End
 
   description = document.createElement("p");
+  description.classList.add("description");
   description.textContent = details.description;
   description.style.textAlign = "start";
   detailsContainer.appendChild(description);
 
   continueReadingBtn = document.createElement("button");
+  continueReadingBtn.classList.add("contBtn");
   continueReadingBtn.textContent = "CONTINUE READING";
   continueReadingBtn.style.textAlign = "start";
   detailsContainer.appendChild(continueReadingBtn);
