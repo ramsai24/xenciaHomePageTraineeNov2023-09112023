@@ -51,7 +51,9 @@
   z-index: 1;
   border: 1px solid;
   padding-left: 0px;
-  background-color: lightsalmon;
+  background-color: transparent;
+  border-radius: 3px;
+  width: 100px;
 }
 
 .hovering:hover .ul-container {
@@ -105,10 +107,13 @@ img[name="logout"] {
 }
 
 .cards-container {
-  text-align: center;
+  /* text-align: center; */
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
   margin: 18px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 button[name="arrowBtn"] {
@@ -121,12 +126,12 @@ button[name="arrowBtn"] {
   position: static;
 }
 
-button[name="arrowBtn"]:hover {
+/* button[name="arrowBtn"]:hover {
   background-color: white;
   color: #000;
   border-radius: 50%;
   width: 50px;
-}
+} */
 
 .card-button {
   margin: 18px;
@@ -138,6 +143,8 @@ img[name="cardImage"] {
 }
 
 .description-container {
+  padding-left: 90px;
+  padding-right: 60px;
   background-image: linear-gradient(to bottom, #fff, lightgray);
   padding: 40px;
   text-align: center;

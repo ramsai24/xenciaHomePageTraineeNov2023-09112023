@@ -295,7 +295,7 @@ leftSlideBtn.onclick = function () {
   imgSlide.classList.add("animation-class");
   setTimeout(function () {
     imgSlide.classList.remove("animation-class");
-  }, 2000);
+  }, 1001);
 };
 
 let rightSlideBtn = document.createElement("button");
@@ -312,7 +312,7 @@ rightSlideBtn.onclick = function () {
   imgSlide.classList.add("animation-class");
   setTimeout(function () {
     imgSlide.classList.remove("animation-class");
-  }, 2000);
+  }, 1001);
 };
 sliderContainer.appendChild(rightSlideBtn);
 
@@ -330,7 +330,7 @@ let itemsArray = [
     desImgUrl:
       "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/zknc1rplcoy7axgur407.jpg",
     description:
-      "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
+      "Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip.Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip.",
   },
   {
     id: 2,
@@ -343,7 +343,7 @@ let itemsArray = [
     desImgUrl:
       "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/bd08nfvuum5wofuqkaqa.jpg",
     description:
-      "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
+      "A toy is an object that's made for a child to play with. Your favorite childhood toy might have been a dollhouse, a stuffed animal, or a set of blocks. Some toys are specifically designed for play, like a small wooden train set or a baby's shape sorter.A toy is an object that's made for a child to play with. Your favorite childhood toy might have been a dollhouse, a stuffed animal, or a set of blocks. Some toys are specifically designed for play, like a small wooden train set or a baby's shape sorter.",
   },
   {
     id: 3,
@@ -356,7 +356,7 @@ let itemsArray = [
       "https://res.cloudinary.com/daoquetki/image/upload/v1705401529/blog%20task16012024/ss6d3pghptnrio9tcbgl.jpg",
     style: "Lifestyle",
     description:
-      "Fashion is a term used interchangeably to describe the creation of clothing,  social status, self-expression, and group ...",
+      "Fashion is a term used interchangeably to describe the creation of clothing, footwear, accessories, cosmetics, and jewellery of different cultural aesthetics and their mix and match into outfits that depict distinctive ways of dressing (styles and trends) as signifiers of social status, self-expression, and group ...",
   },
 ];
 
