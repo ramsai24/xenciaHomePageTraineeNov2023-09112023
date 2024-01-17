@@ -16,15 +16,7 @@
 .content-container {
   background-color: #fff;
   /* min-height: 90vh; */
-  text-align: centers;
-}
-
-a {
-  margin: 12px;
-}
-
-i[name="send"] {
-  color: red;
+  text-align: center;
 }
 
 .header-container {
@@ -33,6 +25,62 @@ i[name="send"] {
   padding: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  border-bottom: 1px solid lightgray;
+}
+
+.hovering {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.hovering:hover {
+  color: #ff9843;
+}
+
+.ul-container {
+  position: absolute;
+  /* right: 0px; */
+  /* left: 20px; */
+  /* right: 0px; */
+  left: 3px;
+  visibility: hidden;
+  z-index: 1;
+  border: 1px solid;
+  padding-left: 0px;
+  background-color: lightsalmon;
+}
+
+.hovering:hover .ul-container {
+  visibility: visible;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: black;
+  color: wheat;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+a {
+  margin: 12px;
+}
+
+i[name="arrow"] {
+  /* padding-top: 5px; */
+  position: relative;
+  top: 3px;
+  left: 3px;
+
+  /* border: 1px solid; */
+}
+.main-title {
+  font-family: cursive, monospace;
+  /* font-size: large; */
 }
 
 img[name="logout"] {
@@ -42,16 +90,39 @@ img[name="logout"] {
 }
 
 .slider-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-size: cover;
   background-position: center;
-  background-image: url("https://res.cloudinary.com/daoquetki/image/upload/v1699962549/cld-sample-2.jpg");
+  /* opacity: 0.1; */
+  background-image: url("https://res.cloudinary.com/daoquetki/image/upload/v1705475827/blog%20task16012024/sjddwc0vzcvup323fdsk.jpg");
   height: 500px;
+  position: relative;
 }
+
 .cards-container {
   text-align: center;
   padding-top: 30px;
   padding-left: 30px;
   margin: 18px;
+}
+
+button[name="arrowBtn"] {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 20px;
+  color: white;
+  position: static;
+}
+
+button[name="arrowBtn"]:hover {
+  background-color: white;
+  color: #000;
+  border-radius: 50%;
+  width: 50px;
 }
 
 .card-button {
@@ -70,11 +141,27 @@ img[name="cardImage"] {
   justify-content: center;
   align-items: center;
   height: 400px;
+  border: 1px solid orange;
 }
 
 img[name="descriptionImage"] {
   height: 300px;
   width: 200px;
+}
+
+img[name="img-slide"] {
+  height: 100%;
+  width: 600px;
+}
+
+.left-arrow:hover ~ img[img-slide] {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    transform: rotate(180deg);
+  }
 }
 
 .details-container {
@@ -107,7 +194,21 @@ img[name="descriptionImage"] {
   width: 100%;
 }
 
-button {
-  height: 300px;
-  width: 200px;
+button[class="card-button"] {
+  /* height: 300px;
+  width: 200px; */
+  border: none;
+  outline: none;
+}
+
+.border-container {
+  width: 300px;
+  border: 2px solid lightgray;
+  position: relative;
+}
+
+.description-img {
+  position: relative;
+  bottom: 30px;
+  right: 30px;
 }

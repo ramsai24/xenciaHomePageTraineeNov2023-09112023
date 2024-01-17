@@ -22,68 +22,160 @@ contentContainer.appendChild(headerContainer);
 let navContainer1 = document.createElement("nav");
 headerContainer.appendChild(navContainer1);
 
+//------------------------home-Tab
+
 let home = document.createElement("a");
+home.classList.add("hovering");
 home.textContent = "Home";
 navContainer1.appendChild(home);
 
+///----------------------------arrow box
+
 let arrowHome = document.createElement("i");
 arrowHome.id = "arrowHome";
-arrowHome.setAttribute("name", "send");
-arrowHome.classList.add("fa-solid", "fa-angle-down");
+arrowHome.setAttribute("name", "arrow");
+arrowHome.classList.add("fa-solid", "fa-angle-down", "down-arrow");
 home.appendChild(arrowHome);
 
-let about = document.createElement("a");
+let ulContainerHome = document.createElement("ul");
+ulContainerHome.classList.add("ul-container");
+home.appendChild(ulContainerHome);
 
+let listItemsArray = [
+  "Home",
+  "About",
+  "Fashion",
+  "Photography",
+  "Style",
+  "Posts",
+];
+
+for (let eachItem of listItemsArray) {
+  let listItem = document.createElement("li");
+  listItem.textContent = eachItem;
+  ulContainerHome.appendChild(listItem);
+}
+
+//------------------------about-Tab
+
+let about = document.createElement("a");
+about.classList.add("hovering");
 about.textContent = "About";
+
 navContainer1.appendChild(about);
 
 let arrowAbout = document.createElement("i");
 arrowAbout.setAttribute("name", "send");
 arrowAbout.id = "arrowAbout";
-arrowAbout.classList.add("fa-solid", "fa-angle-down");
+arrowAbout.classList.add("fa-solid", "fa-angle-down", "down-arrow");
 about.appendChild(arrowAbout);
 
+let ulContainerAbout = document.createElement("ul");
+ulContainerAbout.classList.add("ul-container");
+about.appendChild(ulContainerAbout);
+
+for (let eachItem of listItemsArray) {
+  let listItem = document.createElement("li");
+  listItem.textContent = eachItem;
+  ulContainerAbout.appendChild(listItem);
+}
+
+//------------------------fashion-Tab
+
 let fashion = document.createElement("a");
+fashion.classList.add("hovering");
 fashion.textContent = "Fashion";
 navContainer1.appendChild(fashion);
 
 let arrowFashion = document.createElement("i");
 arrowFashion.setAttribute("name", "send");
 arrowFashion.id = "arrowFashion";
-arrowFashion.classList.add("fa-solid", "fa-angle-down");
+arrowFashion.classList.add("fa-solid", "fa-angle-down", "down-arrow");
 fashion.appendChild(arrowFashion);
 
+let ulContainerFashion = document.createElement("ul");
+ulContainerFashion.classList.add("ul-container");
+fashion.appendChild(ulContainerFashion);
+
+for (let eachItem of listItemsArray) {
+  let listItem = document.createElement("li");
+  listItem.textContent = eachItem;
+  ulContainerFashion.appendChild(listItem);
+}
+
+//------------------------Photography-Tab
+
 let photography = document.createElement("a");
+photography.classList.add("hovering");
 photography.textContent = "Photography";
 navContainer1.appendChild(photography);
 
 let arrowPhotography = document.createElement("i");
 arrowPhotography.setAttribute("name", "send");
 arrowPhotography.id = "arrowPhotography";
-arrowPhotography.classList.add("fa-solid", "fa-angle-down");
+arrowPhotography.classList.add("fa-solid", "fa-angle-down", "down-arrow");
 photography.appendChild(arrowPhotography);
 
+let ulContainerPhotography = document.createElement("ul");
+ulContainerPhotography.classList.add("ul-container");
+photography.appendChild(ulContainerPhotography);
+
+for (let eachItem of listItemsArray) {
+  let listItem = document.createElement("li");
+  listItem.textContent = eachItem;
+  ulContainerPhotography.appendChild(listItem);
+}
+
+//------------------------Style-Tab
+
 let style = document.createElement("a");
+style.classList.add("hovering");
 style.textContent = "Style";
 navContainer1.appendChild(style);
 
 let arrowStyle = document.createElement("i");
 arrowStyle.setAttribute("name", "send");
 arrowStyle.id = "arrowStyle";
-arrowStyle.classList.add("fa-solid", "fa-angle-down");
+arrowStyle.classList.add("fa-solid", "fa-angle-down", "down-arrow");
 style.appendChild(arrowStyle);
 
+let ulContainerStyle = document.createElement("ul");
+ulContainerStyle.classList.add("ul-container");
+style.appendChild(ulContainerStyle);
+
+for (let eachItem of listItemsArray) {
+  let listItem = document.createElement("li");
+  listItem.textContent = eachItem;
+  ulContainerStyle.appendChild(listItem);
+}
+
+//------------------------Post-Tab
+
 let posts = document.createElement("a");
+posts.classList.add("hovering");
 posts.textContent = "Posts";
 navContainer1.appendChild(posts);
 
 let arrowPosts = document.createElement("i");
 arrowPosts.setAttribute("name", "send");
 arrowPosts.id = "arrowPosts";
-arrowPosts.classList.add("fa-solid", "fa-angle-down");
+arrowPosts.classList.add("fa-solid", "fa-angle-down", "down-arrow");
 posts.appendChild(arrowPosts);
 
+let ulContainerPost = document.createElement("ul");
+ulContainerPost.classList.add("ul-container");
+posts.appendChild(ulContainerPost);
+
+for (let eachItem of listItemsArray) {
+  let listItem = document.createElement("li");
+  listItem.textContent = eachItem;
+  ulContainerPost.appendChild(listItem);
+}
+
+//------------------------Pages-Tab
+
 let pages = document.createElement("a");
+pages.classList.add("hovering");
 pages.textContent = "Pages";
 navContainer1.appendChild(pages);
 
@@ -94,15 +186,38 @@ arrowPages.setAttribute("name", "send");
 arrowPages.classList.add("fa-solid", "fa-angle-down");
 pages.appendChild(arrowPages);
 
+let ulContainerPages = document.createElement("ul");
+ulContainerPages.classList.add("ul-container");
+pages.appendChild(ulContainerPages);
+
+for (let eachItem of listItemsArray) {
+  let listItem = document.createElement("li");
+  listItem.textContent = eachItem;
+  ulContainerPages.appendChild(listItem);
+}
+
+//------------------------Contact-Tab
+
 let contact = document.createElement("a");
+contact.classList.add("hovering");
 contact.textContent = "Contact";
 navContainer1.appendChild(contact);
 
 let arrowContact = document.createElement("i");
 arrowContact.setAttribute("name", "send");
 arrowContact.id = "arrowContact";
-arrowContact.classList.add("fa-solid", "fa-angle-down");
+arrowContact.classList.add("fa-solid", "fa-angle-down", "down-arrow");
 contact.appendChild(arrowContact);
+
+let ulContainerContact = document.createElement("ul");
+ulContainerContact.classList.add("ul-container");
+contact.appendChild(ulContainerContact);
+
+for (let eachItem of listItemsArray) {
+  let listItem = document.createElement("li");
+  listItem.textContent = eachItem;
+  ulContainerContact.appendChild(listItem);
+}
 
 //------------------------Nav-Container2
 
@@ -130,18 +245,67 @@ contentContainer.appendChild(bottomContentContent);
 //-------------------------main-Title
 
 let mainTilte = document.createElement("h1");
+mainTilte.classList.add("main-title");
 mainTilte.textContent = "DOLUS BLOG";
 mainTilte.style.textAlign = "center";
 mainTilte.style.paddingTop = "30px";
 
 bottomContentContent.appendChild(mainTilte);
 
+//---------------------IMAGES LIST
+
+let imagesList = [
+  "https://res.cloudinary.com/daoquetki/image/upload/v1705468160/blog%20task16012024/rjbhatg2eqn0tivsnlyt.jpg",
+  "https://res.cloudinary.com/daoquetki/image/upload/v1705468159/blog%20task16012024/tdhgxkwq4xstrpyumpzo.jpg",
+  "https://res.cloudinary.com/daoquetki/image/upload/v1705468159/blog%20task16012024/we0osfrrq0515vbcfzyd.jpg",
+];
+
+let count = 0;
+let countOfImagesList = imagesList.length;
+console.log(countOfImagesList);
+
 //-------------------------Slider-Container
 
 let sliderContainer = document.createElement("div");
 sliderContainer.setAttribute("class", "slider-container");
-sliderContainer.textContent = "hi";
+// sliderContainer.textContent = "hi";
 bottomContentContent.appendChild(sliderContainer);
+
+let leftSlideBtn = document.createElement("button");
+leftSlideBtn.classList.add("fa-solid", "fa-arrow-left", "left-arrow");
+leftSlideBtn.setAttribute("name", "arrowBtn");
+sliderContainer.appendChild(leftSlideBtn);
+
+let imgSlide = document.createElement("img");
+imgSlide.setAttribute("name", "img-slide");
+
+imgSlide.src = imagesList[0];
+// "https://res.cloudinary.com/daoquetki/image/upload/v1705468160/blog%20task16012024/rjbhatg2eqn0tivsnlyt.jpg";
+sliderContainer.appendChild(imgSlide);
+
+// leftSlideBtn.onclick = function () {
+//   count -= 1;
+//   if (count <= 0) {
+//     count = 0;
+//   }
+//   console.log(count);
+
+//   imgSlide.src = imagesList[count];
+// };
+
+let rightSlideBtn = document.createElement("button");
+rightSlideBtn.classList.add("fa-solid", "fa-arrow-right");
+rightSlideBtn.setAttribute("name", "arrowBtn");
+// rightSlideBtn.onclick = function () {
+//   count += 1;
+//   if (count >= countOfImagesList) {
+//     count = 2;
+//   }
+//   console.log(count);
+
+//   imgSlide.src = imagesList[count];
+// };
+sliderContainer.appendChild(rightSlideBtn);
 
 //-------------------------cards-container
 
@@ -164,7 +328,7 @@ let itemsArray = [
     btnId: "toys",
     styleType: "Toys",
     imgUrl:
-      "https://res.cloudinary.com/daoquetki/image/upload/v1705400118/blog%20task16012024/dnvbs4fwdg0ydr90rlcc.jpg",
+      "https://res.cloudinary.com/daoquetki/image/upload/v1705468159/blog%20task16012024/tdhgxkwq4xstrpyumpzo.jpg",
     title: "My Summer Diary",
     style: "Lifestyle",
     desImgUrl:
@@ -187,7 +351,7 @@ let itemsArray = [
   },
 ];
 
-var indexObj = { indexValue: 0 };
+// var indexObj = { indexValue: 0 };
 
 let cardsContainer = document.createElement("div");
 cardsContainer.classList.add("cards-container");
@@ -197,7 +361,7 @@ for (let each of itemsArray) {
   let indexValue;
   let cardButton = document.createElement("button");
   cardButton.classList.add("card-button");
-  cardButton.setAttribute("id", each.btnId);
+  // cardButton.setAttribute("id", each.btnId);s
   //   cardButton.addEventListener("click", function (event) {
   //     // console.log(event.target.id);
   //     // event.target.reload();
@@ -223,6 +387,7 @@ for (let each of itemsArray) {
   cardsContainer.appendChild(cardButton);
 
   let imageCard = document.createElement("img");
+  imageCard.setAttribute("id", each.btnId);
   imageCard.src = each.imgUrl;
   imageCard.setAttribute("name", "cardImage");
   imageCard.setAttribute("alt", each.id);
@@ -234,10 +399,15 @@ let descriptionContainer = document.createElement("div");
 descriptionContainer.setAttribute("class", "description-container");
 bottomContentContent.appendChild(descriptionContainer);
 
+let borderContainer = document.createElement("div");
+borderContainer.classList.add("border-container");
+descriptionContainer.appendChild(borderContainer);
+
 let descriptionImage = document.createElement("img");
 descriptionImage.setAttribute("src", details.desImgUrl);
+descriptionImage.classList.add("description-img");
 descriptionImage.setAttribute("name", "descriptionImage");
-descriptionContainer.appendChild(descriptionImage);
+borderContainer.appendChild(descriptionImage);
 
 //------------------------Details-Container
 
@@ -290,10 +460,14 @@ function descriptionFunctionality(index) {
   descriptionContainer.setAttribute("class", "description-container");
   bottomContentContent.appendChild(descriptionContainer);
 
+  borderContainer = document.createElement("div");
+  borderContainer.classList.add("border-container");
+  descriptionContainer.appendChild(borderContainer);
+
   descriptionImage = document.createElement("img");
   descriptionImage.setAttribute("src", details.desImgUrl);
   descriptionImage.setAttribute("name", "descriptionImage");
-  descriptionContainer.appendChild(descriptionImage);
+  borderContainer.appendChild(descriptionImage);
 
   //------------------------Details-Container
 
