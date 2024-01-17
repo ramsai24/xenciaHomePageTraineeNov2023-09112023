@@ -301,6 +301,7 @@ leftSlideBtn.onclick = function () {
 let rightSlideBtn = document.createElement("button");
 rightSlideBtn.classList.add("fa-solid", "fa-arrow-right");
 rightSlideBtn.setAttribute("name", "arrowBtn");
+
 rightSlideBtn.onclick = function () {
   count += 1;
   if (count >= countOfImagesList) {
@@ -314,6 +315,7 @@ rightSlideBtn.onclick = function () {
     imgSlide.classList.remove("animation-class");
   }, 1001);
 };
+
 sliderContainer.appendChild(rightSlideBtn);
 
 //-------------------------cards-container
@@ -469,9 +471,9 @@ function descriptionFunctionality(index) {
   // descriptionContainer.textContent = "";
   let details = itemsArray[index];
 
-  bottomContentContent.removeChild(descriptionContainer);
-  descriptionContainer = document.createElement("div");
-
+  // bottomContentContent.removeChild(descriptionContainer);
+  // descriptionContainer = document.createElement("div");
+  //
   descriptionContainer.setAttribute("class", "description-container");
   bottomContentContent.appendChild(descriptionContainer);
 
@@ -486,28 +488,28 @@ function descriptionFunctionality(index) {
 
   //------------------------Details-Container
 
-  detailsContainer = document.createElement("div");
+  // detailsContainer = document.createElement("div");
   detailsContainer.classList.add("details-container");
   descriptionContainer.appendChild(detailsContainer);
 
-  detailsHead = document.createElement("h4");
+  // detailsHead = document.createElement("h4");
   detailsHead.textContent = details.btnId.toUpperCase();
   detailsContainer.appendChild(detailsHead);
 
   //------------------------Caption-Container------Start
 
-  captionContainer = document.createElement("div");
+  // captionContainer = document.createElement("div");
   captionContainer.classList.add("caption-container");
 
   detailsContainer.appendChild(captionContainer);
 
-  caption = document.createElement("p");
+  // caption = document.createElement("p");
   caption.textContent = details.style;
   caption.style.fontSize = "12px";
   caption.style.fontWeight = "500";
   captionContainer.appendChild(caption);
 
-  hrLine = document.createElement("hr");
+  // hrLine = document.createElement("hr");
   hrLine.classList.add("hr-line");
   hrLine.style.color = "red";
   hrLine.style.width = "60%";
@@ -516,13 +518,13 @@ function descriptionFunctionality(index) {
 
   //------------------------Caption-Container------End
 
-  description = document.createElement("p");
+  // description = document.createElement("p");
   description.classList.add("description");
   description.textContent = details.description;
   description.style.textAlign = "start";
   detailsContainer.appendChild(description);
 
-  continueReadingBtn = document.createElement("button");
+  // continueReadingBtn = document.createElement("button");
   continueReadingBtn.classList.add("contBtn");
   continueReadingBtn.textContent = "CONTINUE READING";
   continueReadingBtn.style.textAlign = "start";
